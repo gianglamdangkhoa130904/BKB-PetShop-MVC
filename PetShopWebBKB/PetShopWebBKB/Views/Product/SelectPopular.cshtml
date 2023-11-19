@@ -1,0 +1,2 @@
+﻿@model PetShopWebBKB.Models.Popular
+@Html.DropDownListFor(model => model.PopularID, new SelectList(Model.ListPopular.OrderBy(model => model.Popularity), "PopularID", "Popularity"), "--Select Popular--")

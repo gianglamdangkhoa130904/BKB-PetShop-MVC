@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.OrderPro>
+
+@{
+    ViewBag.Title = "Receipt";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<div class="container-lg">
+    <h2 align="center">Đơn hàng của tôi</h2>
+    <table class="table">
+        <tr>
+            <td align="center">
+                <b>Ngày đặt hàng</b>
+            </td>
+            <td align="center">
+                <b>Mã khách hàng</b>
+            </td>
+            <td align="center">
+                <b>Mã đơn hàng</b>
+            </td>
+            <td align="center">
+                <b>Tổng tiền</b>
+            </td>
+            <td></td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.DateOrder)
+                </td>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.IDcus)
+                </td>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td align="center">
+                    @Html.DisplayFor(modelItem =>item.Total)
+                </td>
+                <td align="center">
+                   |@Html.ActionLink("Chi tiết đơn hàng", "Details", new { id = item.ID })|
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

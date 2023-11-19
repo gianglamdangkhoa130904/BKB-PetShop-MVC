@@ -1,0 +1,239 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+<link rel="stylesheet" href="~/Content/HomeStyle.css" />
+
+<section>
+    <div class="container-lg" style="margin-bottom:20px; height:auto">
+        <div style="float:left;">
+            <div class="slideshow" style="border-radius:20px;">
+                <div class="list_images">
+                    <img id="banner" src="~/Image/HomeImg/Banner/banner1.jpg" width="800">
+                    <img id="banner" src="~/Image/HomeImg/Banner/banner2.jpg" width="800">
+                    <img id="banner" src="~/Image/HomeImg/Banner/banner3.jpg" width="800">
+                </div>
+                <div id="buttons">
+                    <div id="left">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div id="right">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+                <script language="Javascript" src="~/Scripts/Homebanner.js"></script>
+            </div>
+        </div>
+        <div style="float:left; height:230px; width:490px; margin-bottom:6px; margin-left:6px;">
+            <img src="~/Image/HomeImg/Banner/banner2.jpg" style="width:100%; height:100%; border-radius:20px;"/>
+        </div>
+        <div style="float: left; height: 230px; width: 490px; margin-bottom: 20px; margin-left: 6px;">
+            <img src="~/Image/HomeImg/Banner/banner3.jpg" style="width: 100%; height: 100%; border-radius: 20px;" />
+        </div>
+    </div>
+</section>
+<section class="container-lg" style="height:100px;"></section>
+<section class="container-lg" style="border-radius:10px">
+    <div class="row" style="background-color: burlywood; height: 50px; display: flex; align-items: center; border-radius: 10px 10px 0 0; color:white"><h3>Top Pet</h3></div>
+    <div class="row py-3" id="pets_main">
+        <div class="col-xxl-3"><img src="~/Image/Pet/Dogs/corgi.png" style="width:306px; height:250px; border-radius:10px;" /></div>
+        <div class="col-xxl-3"><img src="~/Image/Pet/Cats/BritishShorthair.png" style="width: 306px; height: 250px; border-radius: 10px; " /></div>
+        <div class="col-xxl-3"><img src="~/Image/Pet/Hamsters/HamsterRobo/HamsterRobo-platinum.png" style="width: 306px; height: 250px; border-radius: 10px; " /></div>
+        <div class="col-xxl-3"><a href="ProductDetail"><img src="~/Image/Pet/Rabbits/MiniLop.png" style="width: 306px; height: 250px; border-radius: 10px; " /></a></div>
+    </div>
+    <div class="row" id="footer_top_pet_main" style="height: 75px; display: flex; align-items: center; justify-content: center;"><button style="background-color:burlywood; width:150px; height:50px; border:none; color:white;border-radius:10px; ">Xem thêm</button></div>
+</section>
+<section class="container-lg" id="top_pet">
+    <div class="row" id="header_top_pet" style="background-color: sandybrown"><h3>Dogs</h3></div>
+    <div class="row py-3" id="pets">
+        <div class="col-xxl-3 col-md-6">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Dogs/poodle.png" />
+                <div class="card-body">
+                    <h5 class="card-title">Poodle</h5>
+                    <p class="card-text">Một chú cún poodle nhỏ nhắn,lông vàng, xù, xinh xắn, có thể làm bạn với bạn</p>
+                    <p class="card-text">Giá: 1.750.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Dogs/pug.png" />
+                <div class="card-body">
+                    <h5 class="card-title">Pug</h5>
+                    <p class="card-text">Một chú cún Pug nhìn vẻ ngoài có vẻ hung dữ nhưng bên trong là một tâm hồn nhỏ bé đang đợi bạn rước về</p>
+                    <p class="card-text">Giá: 2.000.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-6 ">
+            <div class="card" style=" position:inherit">
+                <img class="card-img-top" src="~/Image/Pet/Dogs/Pomeranian.png" />
+                <div class="card-body">
+                    <h5 class="card-title">Pomeranian</h5>
+                    <p class="card-text">Một chú cún Pomeranian dễ thương, bé tẹo, lông xù trắng đang sẵn sàng làm bạn của bạn ở bất cứ đâu</p>
+                    <p class="card-text">Giá: 2.500.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Dogs/French_Bulldog.png" />
+                <div class="card-body">
+                    <h5 class="card-title">French Bulldog</h5>
+                    <p class="card-text">Một chú cún French Bulldog dễ thương có xuất thân từ Pháp, bởi vậy em ấy rất tình cảm</p>
+                    <p class="card-text bottom-100">Giá: 1.100.000VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet"><button style="background-color:sandybrown">Xem thêm</button></div>
+</section>
+<section class="container-lg" id="top_pet">
+    <div class="row" id="header_top_pet" style="background-color:peru"><h3>Cats</h3></div>
+    <div class="row py-3" id="pets">
+        <div class="col-xxl-4 col-md-6">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Cats/Bengal.png" />
+                <div class="card-body">
+                    <h5 class="card-title">Bengal</h5>
+                    <p class="card-text">Một chú mèo Bengal với bộ lông giống một chú báo nhưng bên trong rất là dễ thương</p>
+                    <p class="card-text">Giá: 3.400.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Cats/MaineCoon.png" />
+                <div class="card-body">
+                    <h5 class="card-title">MaineCoon</h5>
+                    <p class="card-text">Một MaineCoon dễ thương với bộ lông xù và có bờm như sư tử đang đợi con sen rước về cung điện</p>
+                    <p class="card-text">Giá: 3.750.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Cats/Mucnhkin.png" />
+                <div class="card-body">
+                    <h5 class="card-title">Mucnhkin</h5>
+                    <p class="card-text">Một chiếc Mucnhkin với bộ mặt hồn nhiên ngây thơ trong sáng sẽ làm bạn ngất ngây và muốn rước em ấy</p>
+                    <p class="card-text">Giá: 4.500.000VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet">
+        <button style="background-color:peru">Xem thêm</button>
+    </div>
+</section>
+<section class="container-lg" id="top_pet">
+    <div class="row" id="header_top_pet" style="background-color:tan"><h3>Hamster</h3></div>
+    <div class="row py-3" id="pets">
+        <div class="col-xxl-4 col-md-6">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Hamsters/HamsterBear/HamsterBear-longxu.png" />
+                <div class="card-body">
+                    <h5 class="card-title">HamsterBear lông xù</h5>
+                    <p class="card-text">HamsterBear lông xù màu trắng tuyết cực kỳ cute suốt ngày chỉ biết ăn</p>
+                    <p class="card-text">Giá: 750.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Hamsters/HamsterBear/HamsterBear-vangkhoangtrang.png" />
+                <div class="card-body">
+                    <h5 class="card-title">HamsterBear vàng nhẫn trắng</h5>
+                    <p class="card-text">Một chú HamsterBear vàng nhẫn trắng dễ thương nhìn như chú chuột Jerry</p>
+                    <p class="card-text">Giá: 1.200.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Hamsters/HamsterCampbell/HamsterCampbell-naulungden.png" />
+                <div class="card-body">
+                    <h5 class="card-title">HamsterCampbell nâu lưng sọc đen</h5>
+                    <p class="card-text">Một chú HamsterCampbell nâu lưng sọc đen trên lưng vô cùng cute</p>
+                    <p class="card-text">Giá: 500.000VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-3" id="pets">
+        <div class="col-xxl-4 col-md-6">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Hamsters/WinterWhite/WinterWhite-sapphire.jpg" />
+                <div class="card-body">
+                    <h5 class="card-title">WinterWhite Sapphire</h5>
+                    <p class="card-text">Một chú WinterWhite Sapphire có màu lông vô cùng xinh xắn và ú nù</p>
+                    <p class="card-text">Giá: 1.500.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Hamsters/WinterWhite/WinterWhite-trasua.png" />
+                <div class="card-body">
+                    <h5 class="card-title">WinterWhite Trà sữa</h5>
+                    <p class="card-text">Một chú WinterWhite Trà sữa dễ thương với đôi mắt long lanh có thể đánh đổ bất kì trái tim nào</p>
+                    <p class="card-text">Giá: 1.700.000VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 ">
+            <div class="card" style=" position: inherit">
+                <img class="card-img-top" src="~/Image/Pet/Hamsters/HamsterRobo/HamsterRobo-nausua.png" />
+                <div class="card-body">
+                    <h5 class="card-title">HamsterRobo nâu sữa</h5>
+                    <p class="card-text">Một chú HamsterRobo nhỏ nhắn xinh xinh luôn sẵn sàng mang đến niềm vui cho bạn</p>
+                    <p class="card-text">Giá: 2.000.000VND</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet"><button style="background-color:tan">Xem thêm</button></div>
+</section>
+<<section class="container-lg" id="top_pet">
+<div class="row" id="header_top_pet" style="background-color:peru"><h3>Rabbit</h3></div>
+<div class="row py-3" id="pets">
+    <div class="col-xxl-4 col-md-6">
+        <div class="card" style=" position: inherit">
+            <img class="card-img-top" src="~/Image/Pet/Rabbits/California.png" />
+            <div class="card-body">
+                <h5 class="card-title">American</h5>
+                <p class="card-text">Một chú mèo Bengal với bộ lông giống một chú báo nhưng bên trong rất là dễ thương</p>
+                <p class="card-text">Giá: 3.400.000VND</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-md-6 ">
+        <div class="card" style=" position: inherit">
+            <img class="card-img-top" src="~/Image/Pet/Rabbits/BlancDeHotot.png" />
+            <div class="card-body">
+                <h5 class="card-title">MaineCoon</h5>
+                <p class="card-text">Một MaineCoon dễ thương với bộ lông xù và có bờm như sư tử đang đợi con sen rước về cung điện</p>
+                <p class="card-text">Giá: 3.750.000VND</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-4 col-md-6 ">
+        <div class="card" style=" position: inherit">
+            <img class="card-img-top" src="~/Image/Pet/Rabbits/MiniLop.png" />
+            <div class="card-body">
+                <h5 class="card-title">Mucnhkin</h5>
+                <p class="card-text">Một chiếc Mucnhkin với bộ mặt hồn nhiên ngây thơ trong sáng sẽ làm bạn ngất ngây và muốn rước em ấy</p>
+                <p class="card-text">Giá: 4.500.000VND</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="row" id="footer_top_pet">
+    <button style="background-color:peru">Xem thêm</button>
+</div>
+</section>
+

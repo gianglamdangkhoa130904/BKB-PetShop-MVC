@@ -1,0 +1,149 @@
+﻿@model PetShopWebBKB.Models.Customer
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #link a {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+    }
+
+        #link a:hover {
+            color: white;
+        }
+
+    #link input:hover {
+        color: white;
+    }
+</style>
+<div class="container-lg">
+    <h3 style="font-size:40px">Delete</h3>
+
+    <h3 style="font-size:30px;">Bạn có chắc chắn muốn xóa tài khoản này không?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal" style="font-size:20px">
+            <dt>
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ID):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ID)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.AddressCus):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AddressCus)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PhoneNumber):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PasswordCus):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PasswordCus)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DateOfBirth):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateOfBirth)
+            </dd>
+            <dt>
+                Tên đăng nhập khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+            <dt>
+                mật khẩu đăng nhập khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PasswordCus)
+            </dd>
+            <dt>
+                Tên khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NameCustomer)
+            </dd>
+
+            <dt>
+                Địa chỉ khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.AddressCus)
+            </dd>
+            <dt>
+                Email khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt>
+                Số điện thoại khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+            <dt>
+                Ngày sinh khách hàng:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateOfBirth)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color" id="link">
+                <input type="submit" value="Delete" class="" style="font-size:20px; background:none; border:none;" />
+                @Html.ActionLink("Back to List", "ListAccount", "LoginCus")
+            </div>
+        }
+    </div>
+
+</div>
+

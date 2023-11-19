@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PetShopModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="IDCus" />
+    </Key>
+    <Property Name="IDCus" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="char" MaxLength="20" />
+    <Property Name="PasswordCus" Type="char" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="IDCustomer" />
+    </Key>
+    <Property Name="IDCustomer" Type="int" Nullable="false" />
+    <Property Name="NameCustomer" Type="nvarchar" MaxLength="30" />
+    <Property Name="AddressCus" Type="nvarchar(max)" />
+    <Property Name="Email" Type="varchar" MaxLength="30" />
+    <Property Name="PhoneNumber" Type="char" MaxLength="15" />
+    <Property Name="DateofBirth" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="NameID" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Pet">
+    <Key>
+      <PropertyRef Name="IDPet" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDPet" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TypePet" Type="char" MaxLength="10" />
+    <Property Name="NamePet" Type="nvarchar" MaxLength="20" />
+    <Property Name="ImagePet" Type="nvarchar(max)" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="Age" Type="smallint" />
+    <Property Name="DecriptionPet" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="IDProduct" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDProduct" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="TypeProduct" Type="char" MaxLength="10" />
+    <Property Name="NameProduct" Type="nvarchar" MaxLength="20" />
+    <Property Name="ImageProduct" Type="nvarchar(max)" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DecriptionProduct" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_Customer_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="IDCus" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pet_Menu">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="Pet" Type="Self.Pet" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Pet">
+        <PropertyRef Name="IDPet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Menu">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="IDProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PetShopModel1StoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pet" EntityType="Self.Pet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Customer_Account" Association="Self.FK_Customer_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pet_Menu" Association="Self.FK_Pet_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Pet" EntitySet="Pet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Menu" Association="Self.FK_Product_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

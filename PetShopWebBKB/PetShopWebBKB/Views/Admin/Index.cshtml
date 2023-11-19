@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.AdminUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    p a {
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+    }
+    th, td{
+        font-size:20px
+    }
+</style>
+
+<div class="container-lg">
+    <h3 style="font-size:40px;">Danh sách tài khoản admin</h3>
+    <p>
+        @Html.ActionLink("Tạo mới", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PasswordCus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoleAdmin)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PasswordCus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoleAdmin)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+

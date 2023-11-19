@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link href="~/Content/ProductDetailStyle.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+<div class="container-lg">
+    <div class="row">
+        <div id="details" style="background-color: white">
+            <div id="left">
+                <div id="showimage" style="border-radius:5px; background-color: burlywood"><img style="width: 100%; height: 100%;" src="~/Image/Pet/Rabbits/MiniLop.png" /></div>
+                <div id="addbuy">
+                    <button id="add"><b>🛒 Thêm vào giỏ hàng</b></button>
+                    <button id="add" style="margin-left: 10%"><b>Mua ngay</b></button>
+                </div>
+            </div>
+            <div id="right">
+                <div id="information">
+                    <div>
+                        <div style="padding-top:2%"><h1>Thỏ tai ngắn MiniLop</h1></div>
+                        <b><p style="color:red">Giá: 1.500.000VND</p></b>
+                        <p style="font-size:20px;">Những bé thỏ MiniLop với bộ lông dày. Đôi mắt to tròn đáng yêu đang có mặt tại BKB Sư Vạn Hạnh, TP. Hồ Chí Minh. Các sen đâu mau tới rước hoàng thượng về đi nè.</p>
+                        <p style="font-size:20px;">Đây là tình trạng sức khỏe: Đã được tiêm ngừa, có bảo hành sức khỏe.</p>
+                        <div class="button-container">
+                            <div id="cuc" style="width:200px; height: 60px;">
+                                <div style="float:left;"><label style="font-size:20px;">Số lượng: &nbsp;</label></div>
+                                <div>
+                                    <button id="plusminus" onclick="decrement();">-</button>
+                                    <span id="quantity">0</span>
+                                    <button id="plusminus" onclick="increment();">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <p style="font-size:20px;">Quý khách vui lòng gọi điện số dien thoai bên dưới hoặc nhấn vào nút "LIÊN HỆ ĐẶT HÀNG" nhân viên bên shop sẽ tư vấn giá chi tiết về sản phẩm mà quý khách lựa chọn. Đồng thời hỗ trợ đặt hàng cũng như ship hàng cho quý khách nhé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="couponDetail" style="background-color:white; margin-top: 2%; border-radius: 10px; height: 145px;">
+            <p> Các ưu đãi liên quan: </p>
+            <div style="display: inline-block">
+                <div class="coupon" style="width: 320px; height: 70px; background-color:aquamarine; border-radius: 10px; float: left;">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 100k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua pet tại store</p>
+                    </div>
+                </div>
+                <div class="coupon" style="width: 320px; height: 70px; background-color:aquamarine; border-radius: 10px; float: right">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 100k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua pet tại store</p>
+                    </div>
+                </div>
+                <div class="coupon" style="width: 320px; height: 70px; background-color: aquamarine; border-radius: 10px; float: right">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 100k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua pet tại store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relatedProduct" style="background-color: white; margin-top: 2%; border-radius: 10px; height: 350px; display:inline-block">
+            <p>Các thú cưng liên quan: </p>
+            <div style="margin-left: 27px;">
+                <div class="relatedContent" style="float: left;">
+                    <div class="imgShow"><img style="width: 250px; height: 200px; margin-top: 10px; border-radius: 10%;" src="~/Image/Pet/Rabbits/LionHead.png" /></div>
+                    <div>
+                        <p align="center" style="font-size: 20px;"><b>LionHeart</b></p>
+                        <p style="font-size: 18px;">Giá: </p>
+                    </div>
+                </div>
+                <div class="relatedContent" style="float: left;">
+                    <div class="imgShow"><img style="width: 250px; height: 200px; margin-top: 10px; border-radius: 10%;" src="~/Image/Pet/Rabbits/American.png" /></div>
+                    <div>
+                        <p align="center" style="font-size: 20px;"><b>American</b></p>
+                        <p style="font-size: 18px;">Giá: </p>
+                    </div>
+                </div>
+                <div class="relatedContent" style="float:left;">
+                    <div class="imgShow"><img style="width: 250px; height: 200px; margin-top: 10px; border-radius: 10%;" src="~/Image/Pet/Rabbits/California.png" /></div>
+                    <div>
+                        <p align="center" style="font-size: 20px;"><b>California</b></p>
+                        <p style="font-size: 18px;">Giá: </p>
+                    </div>
+                </div>
+                <div class="relatedContent" style="float: left;">
+                    <div class="imgShow"><img style="width: 250px; height: 200px; margin-top: 10px; border-radius: 10%;" src="~/Image/Pet/Rabbits/MiniRex.png" /></div>
+                    <div>
+                        <p align="center" style="font-size: 20px;"><b>Minirex</b></p>
+                        <p style="font-size: 18px;">Giá: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productInDetails" style="background-color: white; margin-top: 2%; border-radius: 10px;">
+            <p>Thông tin sản phẩm: </p>
+            <div class="productInDetailsLeft" style="float:left;">
+                <p>Mã hàng: </p>
+                <p>Độ tuổi:  </p>
+                <p>Tên nhà cung cấp: </p>
+                <p>Tác giả: </p>
+                <p>Nhà xuất bản: </p>
+                <p>Năm xuất bản: </p>
+                <p>Ngôn ngữ: </p>
+                <p>Trọng lượng: </p>
+                <p>Kích thước bao bì: </p>
+                <p>Số trang: </p>
+                <p>Hình thức: </p>
+            </div>
+            <div class="productInDetailsRight" style="margin-left: 50%;">
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+                <p>Đẹp trai</p>
+            </div>
+        </div>
+        <div class="review"></div>
+    </div>
+</div>
+
+
+<script language="Javascript">
+    var quantityElement = document.getElementById('quantity');
+    var quantity = 0;
+
+    function increment() {
+        quantity++;
+        updateQuantity();
+    }
+
+    function decrement() {
+        if (quantity > 0) {
+            quantity--;
+            updateQuantity();
+        }
+    }
+
+    function updateQuantity() {
+        quantityElement.innerHTML = quantity;
+    }
+</script>
+

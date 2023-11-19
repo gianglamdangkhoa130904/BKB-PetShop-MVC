@@ -1,0 +1,92 @@
+﻿@model PetShopWebBKB.Models.AdminUser
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    div {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        font-size: 15px;
+        width: 250px;
+        height: 40px;
+        border: none;
+        border-radius: 10px
+    }
+</style>
+<div class="container-lg">
+    <h3 style="font-size:40px;">Edit</h3>
+    @{if (ViewBag.ErrorNotEnough != null)
+        {
+            <p style="color:red;">@ViewBag.ErrorNotEnough</p>
+        }
+    }
+    @{if (ViewBag.ErrorUsername != null)
+        {
+            <p style="color:red;">@ViewBag.ErrorUsername</p>
+        }
+    }
+    @{if (ViewBag.ErrorManager != null)
+        {
+            <p style="color:red;">@ViewBag.ErrorManager</p>
+        }
+    }
+    @{if (ViewBag.ErrorLongPassword != null)
+        {
+            <p style="color:red;">@ViewBag.ErrorLongPassword</p>
+        }
+    }
+    @{if (ViewBag.ErrorLongUsername != null)
+        {
+            <p style="color:red;">@ViewBag.ErrorLongUsername</p>
+        }
+    }
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.ID)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.PasswordCus, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.PasswordCus, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.PasswordCus, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.RoleAdmin, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.RoleAdmin, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.RoleAdmin, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>
+

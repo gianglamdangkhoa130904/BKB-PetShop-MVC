@@ -1,0 +1,227 @@
+﻿@model PetShopWebBKB.Models.Product
+
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .card img {
+        height: 240px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    #top_pet {
+        background-color: white;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+        #top_pet #header_top_pet {
+            border-radius: 10px 10px 0px 0px;
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        #top_pet #footer_top_pet {
+            border-radius: 0px 0px 10px 10px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            #top_pet #footer_top_pet button {
+                color: white;
+                border: none;
+                height: 50px;
+                width: 150px;
+                border-radius: 10px;
+                transition: 1s;
+            }
+
+                #top_pet #footer_top_pet button:hover {
+                    box-shadow: 10px 10px 40px burlywood;
+                    border-radius: 60px;
+                }
+
+        #top_pet #pets {
+            height: auto;
+        }
+
+            #top_pet #pets div {
+                height: 440px;
+            }
+
+            #top_pet #pets .card img {
+                height: 240px;
+                width: 100%;
+                border-radius: 10px;
+            }
+</style>
+<link href="~/Content/ProductDetailStyle.css" rel="stylesheet" />
+<link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+<div class="container-lg">
+    <div class="row">
+        <div id="details" style="background-color: white">
+            <div id="left">
+                <div id="showimage" style="border-radius:5px; background-color: burlywood; margin-left: -10px;"><img style="width: 100%; height: 100%; border-radius: 10px;" src="@Url.Content(Model.ImagePro)" /></div>
+                <div id="addbuy" style="margin-left: -18px;">
+                    <button style="border-color: burlywood; border-style: double; background-color: white; border-width:3px;" id="add"><a href="/ShoppingCart/AddToCart/@Model.ID" style="text-decoration:none; color:burlywood;"><b><i class='bx bxs-cart' style="font-size:25px"></i> Thêm vào giỏ hàng</b></a></button>
+                    <button id="add" style="margin-left: 10%; background-color: burlywood; border: none"><a href="/ShoppingCart/Buy/@Model.ID" style="text-decoration:none; color:white;"><b>Mua ngay</b></a></button>
+                </div>
+            </div>
+            <div id="right" style="width: 40%; float: right">
+                <div id="information">
+                    <div>
+                        <div style="padding-top:2%"><h1>@Model.NamePro</h1></div>
+                        <b><p style="color:red">Giá: @Model.Price</p></b>
+                        <p style="font-size:20px;">Mô tả: @Model.DescriptionPro</p>
+                        <p style="font-size:20px;">Đánh giá: @Model.Rating / 5 </p>
+                        <p style="font-size:20px;">Quý khách vui lòng gọi điện số điện thoại bên dưới hoặc nhấn vào nút "LIÊN HỆ ĐẶT HÀNG" nhân viên bên shop sẽ tư vấn giá chi tiết về sản phẩm mà quý khách lựa chọn. Đồng thời hỗ trợ đặt hàng cũng như ship hàng cho quý khách nhé.</p>
+                        <p style="font-size:20px;">Thời gian giao hàng: Tầm 3 - 5 ngày sau khi đặt hàng</p>
+                        <p style="font-size:20px;">Chính sách đổi trả: Được bảo hành 2 năm, được đảm bảo bởi bác sĩ thú y trọn đời</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="couponDetail" style="background-color:white; margin-top: 2%; border-radius: 10px; height: 145px;">
+            <div class="row" style="background-color: sandybrown; border-radius: 10px;"><h3 style="margin-left: 2%;">Các ưu đãi</h3></div>
+            <div style="display: inline-block; margin-top: 18px;">
+                <div class="coupon" style="width: 300px; height: 70px; background-color:aquamarine; border-radius: 10px; float: left; margin-left: 17px;">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 100k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua tại store</p>
+                    </div>
+                </div>
+                <div class="coupon" style="width: 300px; height: 70px; background-color:aquamarine; border-radius: 10px; float: left;">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 150k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua tại store</p>
+                    </div>
+                </div>
+                <div class="coupon" style="width: 300px; height: 70px; background-color:aquamarine; border-radius: 10px; float: left;">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 200k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua tại store</p>
+                    </div>
+                </div>
+                <div class="coupon" style="width: 300px; height: 70px; background-color:aquamarine; border-radius: 10px; float: left;">
+                    <div class="flaticon"><img style="width: 45px; height: 55px; float: left; padding-top: 10px; margin-left: 2%;" src="~/Image/ProductDetails/hot-sale.png" /></div>
+                    <div class="couponContent" style="float: right; margin-right: 4%;">
+                        <b><p style="font-size: 20px; margin-bottom: 2px;">Mã giảm 300k</p></b>
+                        <p style="font-size: 15px; margin-bottom: 3px;">Không áp dụng cho mua tại store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 30px;">
+            <section class="container-lg" id="top_pet" style="position:relative;">
+                <div class="row" id="header_top_pet" style="background-color: sandybrown"><h3>Sản phẩm liên quan</h3></div>
+                <div id="formlistdog">
+                    <div id="listdog">
+                        @{ if (Model.IDPro == "Cat")
+                            {
+                                <section class="container-lg" id="top_pet" style="position:relative;">
+                                    <div id="formlistcat">
+                                        <div id="listcat">
+                                            <div class="directioncat">
+                                                <button id="prevcat"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                                                <button id="nextcat"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+                                            </div>
+                                            <script src="~/Scripts/HomeJS/ListCatScript.js"></script>
+                                            @{Html.RenderAction("CatPartial", "Product"); }
+                                        </div>
+                                    </div>
+                                </section>
+                            }
+                            if (Model.IDPro == "Dog")
+                            {
+                                <section class="container-lg" id="top_pet" style="position:relative;">
+                                    <div id="formlistdog">
+                                        <div id="listdog">
+                                            <div class="directiondog">
+                                                <button id="prevdog"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                                                <button id="nextdog"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+                                            </div>
+                                            @{Html.RenderAction("DogPartial", "Product"); }
+                                            <script src="~/Scripts/HomeJS/ListDogScript.js"></script>
+                                        </div>
+                                    </div>
+                                </section>
+                            }
+                            if (Model.IDPro == "Rabbit")
+                            {
+                                <section class="container-lg" id="top_pet" style="position:relative;">
+                                    <div id="formlistrabbit">
+                                        <div id="listrabbit">
+                                            <div class="directionrabbit">
+                                                <button id="prevrabbit"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                                                <button id="nextrabbit"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+                                            </div>
+                                            <script src="~/Scripts/HomeJS/ListRabbitScript.js"></script>
+                                            @{Html.RenderAction("RabbitPartial", "Product"); }
+                                        </div>
+                                    </div>
+                                </section>
+                            }
+                            if (Model.IDPro == "Hamster")
+                            {
+                                <section class="container-lg" id="top_pet" style="position:relative;">
+                                    <div id="formlisthamster">
+                                        <div id="listhamster">
+                                            <div class="directionhamster">
+                                                <button id="prevhamster"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                                                <button id="nexthamster"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+                                            </div>
+                                            <script src="~/Scripts/HomeJS/ListHamsterScript.js"></script>
+                                            @{Html.RenderAction("HamsterPartial", "Product"); }
+                                        </div>
+                                    </div>
+                                </section>
+                            }
+                        }
+                        <script src="~/Scripts/HomeJS/ListDogScript.js"></script>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="productInDetails" style="background-color: white; margin-top: 2%; border-radius: 10px;">
+            <b><p style="margin-left: 3%;">Thông tin chi tiết của @Model.NamePro </p></b>
+            <div class="productInDetailsLeft" style="float:left; margin-left: 2%;">
+                <p>Xuất sứ:  </p>
+                <p>Tuổi: </p>
+                <p>Loài: </p>
+                <p>Lông: </p>
+                <p>Kích cỡ: </p>
+                <p>Độ phổ biến: </p>
+                <p>Số lượng còn lại: </p>
+            </div>
+            <div class="productInDetailsRight" style="margin-left: 15%;">
+                <p>@Model.Origin.Origination</p>
+                <p>@Model.Age tháng tuổi</p>
+                <p>@Model.IDPro</p>
+                <p>@Model.Fur.FurType</p>
+                <p>@Model.Size.SizeType</p>
+                <p>@Model.Popular.Popularity</p>
+                <p>@Model.RemainQuantity</p>
+            </div>
+            <div>
+                <p style="font-size: 15px;margin-left: 2%;">Giá sản phẩm trên BKBShop.com đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như Phụ phí đóng gói, phí vận chuyển, phụ phí hàng cồng kềnh,...</p>
+                <p style="color:red; font-size: 15px; margin-left: 2%;">Chính sách khuyến mãi trên BKBShop.com không áp dụng cho Hệ thống cửa hàng BKB trên toàn quốc</p>
+            </div>
+        </div>
+        <div class="review"></div>
+    </div>
+</div>
+
+
+
+
+
+

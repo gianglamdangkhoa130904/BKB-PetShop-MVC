@@ -1,0 +1,133 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta lang="vi" />
+    <title>BKB Pet Shop</title>
+    <link rel="stylesheet" href="~/Content/MasterStyle.css" />
+    <link rel="icon" href="~/Image/favicon.png" />
+    <link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="margin: 0; background-image: url(../../Image/Background2.png); background-size:cover; background-attachment:fixed;">
+        <div class="container-lg" style="height: auto; background-color: burlywood; border-radius: 0px 0px 10px 10px;">
+            <div class="row">
+                <div class="col-xxl-2 col-sm-12 col-xs-12 " style="height: 80px; display:flex; justify-content:center; align-items:center"><img src="~/Image/MasterImg/favicon.png" style="width: 80px; height: 80px " /><a href="/Home/Index" style="text-decoration:none; color:black"><b style=" font-size: large;">BKB Pet shop</b></a></div>
+                <div class="col-xxl-1 col-sm-1 col-xs-1" style="height: 80px; display: flex; justify-content: center; align-items: center "><a href="/Product/ProductMenu/"><img src="~/Image/MasterImg/menu_black.png" /></a></div>
+                <div class="col-xxl-7 col-sm-9 col-xs-9" style="height: 80px; display: flex; justify-content: center; align-items: center ">
+                    @using (Html.BeginForm("SearchByName", "Home"))
+
+                    {
+                        <style>
+                            #search::placeholder{
+                                transform:translateX(-8px);
+                            }
+                        </style>
+                        <input id="search" type="search" placeholder="&nbsp; Tìm kiếm sản phẩm mong muốn..." style="width: 750px; height: 60px; border-radius: 20px; padding-left: 30px;" name="searchname"/>
+                        
+                    }
+                </div>
+                <div class="col-xxl-1 col-sm-1 col-xs-1" style="height: 80px; display: flex; justify-content: center; align-items: center "><a href="/ShoppingCart/ShowCart/"><img src="~/Image/MasterImg/shopping-cart_black.png" style="height: 30px; width: 30px;" /></a>@Html.Action("BagCart", "ShoppingCart")</div>
+                <div class="col-xxl-1 col-sm-1 col-xs-1" style="height: 80px; display: flex; justify-content: center; align-items: center "><a href="/LoginCus/Index"><img src="~/Image/MasterImg/user_black.png" /></a></div>
+            </div>
+        </div>
+    <div class="bodybkb">
+        @RenderBody()
+    </div>
+    <footer class="container-lg my-3" style="height:auto; background-color: white; border-radius:10px">
+        <div class="row" style="height:auto; background-color:gray; border-radius:10px 10px 0px 0px">
+            <div class="col-xxl-3 col-md-12" style="height: 70px; display: flex; justify-content: center; align-items: center;"><img src="~/Image/MasterImg/envelope.png" style="width:50px; height:50px" /><h4 style=" color: white; margin-left:10px">Đăng ký nhận tin</h4></div>
+            <div class="col-xxl-7 col-md-12" style="height: 70px; display: flex; justify-content: center; align-items: center;">
+                <form class="container-fluid" style=" background-color: white; height:60px; border-radius:10px">
+                    <div class="row">
+                        <input id="regist" class="col-8" type="text" style="height: 60px; display: flex; justify-content: center; align-items: center" placeholder="Nhập địa chỉ email của bạn" />
+                        <button id="button_form_footer" class="col-4" type="submit" style="height: 60px; display: flex; justify-content: center; align-items: center">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" style="height:auto">
+            <div class="col-xxl-4 col-lg-4 col-sm-12" style="height:550px; background-color:white">
+                <img src="~/Image/MasterImg/favicon.png" style="width: 100px; height: 100px " />
+                <h3>BKB Pet shop</h3>
+                <kbd style="background-color:white; color:black">
+                    828 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM <br />
+                    Công ty cổ phần phân phối thú cưng TPHCM - BKB <br />
+                    BKB Shop nhận đặt hàng trực tuyến và giao hàng tận nơi. Không hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống BKB Pet Shop trên toàn quốc.
+                </kbd>
+                <div style="width:100%;height:auto; margin-top:10px">
+                    <div id="brand"><img src="~/Image/MasterImg/Brands/facebook.png" alt="Facebook" /></div>
+                    <div id="brand"><img src="~/Image/MasterImg/Brands/instagram.png" alt="Instagram" /></div>
+                    <div id="brand"><img src="~/Image/MasterImg/Brands/twitter.png" alt="Twitter" /></div>
+                    <div id="brand"><img src="~/Image/MasterImg/Brands/youtube.png" alt="Youtube" /></div>
+                    <div id="brand"><img src="~/Image/MasterImg/Brands/twitch.png" alt="Twitch" /></div>
+                    <div id="brand"><img src="~/Image/MasterImg/Brands/discord.png" alt="Discord" /></div>
+                </div> <br />
+                <div style="width: 100%; height: auto; margin-top: 20px">
+                    <div id="playstore"><img src="~/Image/MasterImg/android.png" /></div>
+                    <div id="playstore"><img src="~/Image/MasterImg/appstore.png" /></div>
+                </div>
+            </div>
+            <div class="col-xxl-8 col-lg-8 col-sm-12" style="height:auto">
+                <div class="row">
+                    <div class="col-xxl-4 col-lg-4 col-sm-4" style="height: 220px">
+                        <h4 style="font-size:large; margin-top:20px">DỊCH VỤ</h4>
+                        <ul>
+                            <li>Điều khoản sử dụng</li>
+                            <li>Chính sách bảo mật thông tin cá nhân</li>
+                            <li>Chính sách bảo mật thanh toán</li>
+                            <li>Giới thiệu BKB Pet Shop</li>
+                            <li>Hệ thống trung tâm - nhà sách</li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-4 col-lg-4 col-sm-4" style="height: 220px">
+                        <h4 style="font-size: large; margin-top: 20px">HỖ TRỢ</h4>
+                        <ul>
+                            <li>Chính sách đổi - trả - hoàn tiền</li>
+                            <li>Chính sách bảo hành - bồi hoàn</li>
+                            <li>Chính sách vận chuyển</li>
+                            <li>Chính sách khách sỉ</li>
+                            <li>Phương thức thanh toán và xuất HĐ</li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-4 col-lg-4 col-sm-4" style="height:220px">
+                        <h4 style="font-size: large; margin-top: 20px">TÀI KHOẢN</h4>
+                        <ul>
+                            <li>Đăng nhập/Tạo mới tài khoản</li>
+                            <li>Thay đổi địa chỉ khách hàng</li>
+                            <li>Chi tiết tài khoản</li>
+                            <li>Lịch sử mua hàng</li>
+                            <li>Lịch sử giao dịch</li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="height:auto">
+                        <div style="width:100%; height:50px; display:flex; align-items:center; justify-content:center "><h4 style=" font-size:large;">LIÊN HỆ</h4></div>
+                        <div style="width:100%; height:40px">
+                            <div class="row" style="font-size:small">
+                                <div class="col-xxl-4 col-sm-4 col-xs-12" style="display:flex; align-items:center; justify-content:center "><img src="~/Image/MasterImg/marker.png" style="margin-right:5px" />828 Sư Vạn Hạnh, P.13, Q.10, TP.HCM</div>
+                                <div class="col-xxl-4 col-sm-4 col-xs-12" style="display:flex; align-items:center; justify-content:center "><img src="~/Image/MasterImg/envelope1.png" style="margin-right:5px" />cskh@bkbpetshop.com.vn</div>
+                                <div class="col-xxl-4 col-sm-4 col-xs-12" style="display:flex; align-items:center; justify-content:center "><img src="~/Image/MasterImg/circle-phone-flip.png" style="margin-right:5px" />1900123456</div>
+                            </div>
+                        </div>
+                        <div id="shiping">
+                            <img src="~/Image/MasterImg/Shiping/vnpost.png" style="width:120px; height:60px" />
+                            <img src="~/Image/MasterImg/Shiping/ahamove.png" style="width:140px; height:60px" />
+                            <img src="~/Image/MasterImg/Shiping/giao_hang_nhanh.png" />
+                            <img src="~/Image/MasterImg/Shiping/ninjavan.png" />
+                            <img src="~/Image/MasterImg/Shiping/snappy.png" />
+                        </div>
+                        <div id="banking">
+                            <img src="~/Image/MasterImg/Banking/momo.png" style="width:60px; height:60px" />
+                            <img src="~/Image/MasterImg/Banking/payoo.png" />
+                            <img src="~/Image/MasterImg/Banking/shopeepay.png" />
+                            <img src="~/Image/MasterImg/Banking/vnpay.png" />
+                            <img src="~/Image/MasterImg/Banking/zalopay.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

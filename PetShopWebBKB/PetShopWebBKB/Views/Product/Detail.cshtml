@@ -1,0 +1,74 @@
+﻿@model PetShopWebBKB.Models.Product
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #option a {
+        font-size: 30px;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+</style>
+
+<div class="container-lg" style="border-radius:20px; height:auto">
+    <h2 style="font-size: 40px; margin-top:10px;text-align:center;">Detail</h2>
+    <div class="row" style="height:auto;display:flex; justify-content:center;align-items:center;margin-top:20px">
+        @{int? rate = Model.Rating; }
+        <img src="@Url.Content(Model.ImagePro)" style="height: 250px; width: 300px; border-radius: 10px;" />
+        <table style="border:none; text-align:center; width:40%;">
+            <tr>
+                <td>
+                    <p style="font-size: large; padding-top: 10px">@Html.DisplayFor(model => Model.NamePro)</p>
+                </td>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => Model.Age) tháng tuổi</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => Model.Price)</p>
+                </td>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">Loài: @Html.DisplayFor(model => Model.Menu.NameID)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">Kiểu Lông: @Html.DisplayFor(model => Model.Fur.FurType)</p>
+                </td>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">Kích thước: @Html.DisplayFor(model => Model.Size.SizeType)</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">Xuất xứ: @Html.DisplayFor(model => Model.Origin.Origination)</p>
+                </td>
+                <td>
+                    <p style="font-size:large; padding-left:10px;">Độ phổ biến: @Html.DisplayFor(model => Model.Popular.Popularity)</p>
+                </td>
+            </tr>
+        </table>
+        <p style="font-size:large; padding-left:10px; text-align:center;padding-top:20px">Mô tả: @Html.DisplayFor(model => Model.DescriptionPro)</p>
+        <div style="font-size:large; padding-left:10px; text-align:center;">
+            Đánh giá:
+            @for (int i = 1; i <= rate; i++)
+            {
+                <i class='bx bxs-star' style="color:yellow;"></i>
+            }
+            @for (int i = 1; i <= 5 - rate; i++)
+            {
+                <i class='bx bxs-star' style="color:gray;"></i>
+            }
+        </div>
+        <p style="text-align:center;" id="option">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) 
+            @Html.ActionLink("Delete", "Delete", new { id = Model.ID })
+        </p>
+
+    </div>
+</div>
+   

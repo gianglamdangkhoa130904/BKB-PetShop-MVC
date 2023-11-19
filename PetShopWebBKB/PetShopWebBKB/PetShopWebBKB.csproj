@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85BDD389-4399-4EC7-B978-C492E073190D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PetShopWebBKB</RootNamespace>
+    <AssemblyName>PetShopWebBKB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginCusController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminUser.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBPetShop.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPetShop.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBPetShop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBPetShop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPetShop.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fur.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Menu.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderDetail.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OrderPro.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Origin.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Popular.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Size.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>DBPetShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap.css" />
+    <Content Include="Content\bootstrap5\bootstrap.min.css" />
+    <Content Include="Content\bootstrap5\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap5\bootstrap.rtl.min.css" />
+    <Content Include="Content\InforUserStyle.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Image\background1.png" />
+    <Content Include="Image\Background2.png" />
+    <Content Include="Image\background3.png" />
+    <Content Include="Image\background4.png" />
+    <Content Include="Image\HomeImg\Banner\banner4.png" />
+    <Content Include="Image\HomeImg\Banner\banner5.png" />
+    <Content Include="Image\HomeImg\Icons\cage.png" />
+    <Content Include="Image\HomeImg\Icons\cat.png" />
+    <Content Include="Image\HomeImg\Icons\dog.png" />
+    <Content Include="Image\HomeImg\Icons\hamster.png" />
+    <Content Include="Image\HomeImg\Icons\pet-food.png" />
+    <Content Include="Image\HomeImg\Icons\rabbit.png" />
+    <Content Include="Image\ProductCategoryImage\bannerpet1.png" />
+    <Content Include="Image\ProductCategoryImage\bannerpet2.png" />
+    <Content Include="Image\ProductCategoryImage\bannerpet3.png" />
+    <Content Include="Image\ProductCategoryImage\bannerpet4.png" />
+    <Content Include="Image\ProductCategoryImage\bannerpet5.png" />
+    <Content Include="Models\DBPetShop.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBPetShop.edmx</DependentUpon>
+      <LastGenOutput>DBPetShop.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBPetShop.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBPetShop.edmx</DependentUpon>
+      <LastGenOutput>DBPetShop.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\HomeJS\ListDogScript.js" />
+    <Content Include="Scripts\HomeJS\ListCatScript.js" />
+    <Content Include="Content\ProductCategoryStyle.css" />
+    <Content Include="Content\HomeStyle.css" />
+    <Content Include="Content\MasterStyle.css" />
+    <Content Include="Content\ProductDetailStyle.css" />
+    <Content Include="Content\ShoppedCart.css" />
+    <Content Include="Content\ShoppingCartStyle.css" />
+    <Content Include="Content\ShowCartStyle.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Image\HomeImg\angle-left.png" />
+    <Content Include="Image\HomeImg\angle-right.png" />
+    <Content Include="Image\HomeImg\Banner\banner1.jpg" />
+    <Content Include="Image\HomeImg\Banner\banner2.jpg" />
+    <Content Include="Image\HomeImg\Banner\banner3.jpg" />
+    <Content Include="Image\MasterImg\android.png" />
+    <Content Include="Image\MasterImg\appstore.png" />
+    <Content Include="Image\MasterImg\Banking\momo.png" />
+    <Content Include="Image\MasterImg\Banking\payoo.png" />
+    <Content Include="Image\MasterImg\Banking\shopeepay.png" />
+    <Content Include="Image\MasterImg\Banking\vnpay.png" />
+    <Content Include="Image\MasterImg\Banking\zalopay.png" />
+    <Content Include="Image\MasterImg\Brands\discord.png" />
+    <Content Include="Image\MasterImg\Brands\facebook.png" />
+    <Content Include="Image\MasterImg\Brands\instagram.png" />
+    <Content Include="Image\MasterImg\Brands\twitch.png" />
+    <Content Include="Image\MasterImg\Brands\twitter.png" />
+    <Content Include="Image\MasterImg\Brands\youtube.png" />
+    <Content Include="Image\MasterImg\circle-phone-flip.png" />
+    <Content Include="Image\MasterImg\envelope.png" />
+    <Content Include="Image\MasterImg\envelope1.png" />
+    <Content Include="Image\MasterImg\favicon.png" />
+    <Content Include="Image\MasterImg\faviconfull.jpg" />
+    <Content Include="Image\MasterImg\marker.png" />
+    <Content Include="Image\MasterImg\menu.png" />
+    <Content Include="Image\MasterImg\menu_black.png" />
+    <Content Include="Image\MasterImg\Shiping\ahamove.png" />
+    <Content Include="Image\MasterImg\Shiping\giao_hang_nhanh.png" />
+    <Content Include="Image\MasterImg\Shiping\ninjavan.png" />
+    <Content Include="Image\MasterImg\Shiping\snappy.png" />
+    <Content Include="Image\MasterImg\Shiping\vnpost.png" />
+    <Content Include="Image\MasterImg\shopping-cart.png" />
+    <Content Include="Image\MasterImg\shopping-cart_black.png" />
+    <Content Include="Image\MasterImg\user.png" />
+    <Content Include="Image\MasterImg\user_black.png" />
+    <Content Include="Image\Pet%27s_food\Cat\food1.png" />
+    <Content Include="Image\Pet%27s_food\Cat\food2.png" />
+    <Content Include="Image\Pet%27s_food\Cat\food3.png" />
+    <Content Include="Image\Pet%27s_food\Cat\Note\food1_note.png" />
+    <Content Include="Image\Pet%27s_food\Cat\Note\food2_note.png" />
+    <Content Include="Image\Pet%27s_food\Cat\Note\food3_note.png" />
+    <Content Include="Image\Pet%27s_food\Dog\food1.png" />
+    <Content Include="Image\Pet%27s_food\Dog\food2.png" />
+    <Content Include="Image\Pet%27s_food\Dog\food3.png" />
+    <Content Include="Image\Pet%27s_food\Dog\food4.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\food1.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\food2.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\food3.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\food4.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\Note\food1_note.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\Note\food2_note.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\Note\food3_note.png" />
+    <Content Include="Image\Pet%27s_food\Hamster\Note\food4_note.png" />
+    <Content Include="Image\Pet%27s_food\Rabbit\food1.png" />
+    <Content Include="Image\Pet%27s_food\Rabbit\Note\food1_note.png" />
+    <Content Include="Image\PetCage\Cat\Chuong1.png" />
+    <Content Include="Image\PetCage\Cat\Chuong2.png" />
+    <Content Include="Image\PetCage\Cat\Chuong3.png" />
+    <Content Include="Image\PetCage\Cat\Chuong4.png" />
+    <Content Include="Image\PetCage\Cat\Note\Chuong1_note.png" />
+    <Content Include="Image\PetCage\Cat\Note\Chuong2_note.png" />
+    <Content Include="Image\PetCage\Cat\Note\Chuong3_note.png" />
+    <Content Include="Image\PetCage\Cat\Note\Chuong4_note.png" />
+    <Content Include="Image\PetCage\Dog\Chuong1.png" />
+    <Content Include="Image\PetCage\Dog\Chuong2.png" />
+    <Content Include="Image\PetCage\Dog\Chuong3.png" />
+    <Content Include="Image\PetCage\Dog\Chuong4.png" />
+    <Content Include="Image\PetCage\Dog\Chuong5.png" />
+    <Content Include="Image\PetCage\Dog\Note.png" />
+    <Content Include="Image\PetCage\Hamster\Chuong1.png" />
+    <Content Include="Image\PetCage\Hamster\Chuong2.png" />
+    <Content Include="Image\PetCage\Hamster\Chuong3.png" />
+    <Content Include="Image\PetCage\Hamster\Chuong4.png" />
+    <Content Include="Image\PetCage\Hamster\Note\Chuong1_note.png" />
+    <Content Include="Image\PetCage\Hamster\Note\Chuong2_note.png" />
+    <Content Include="Image\PetCage\Hamster\Note\Chuong3_note.png" />
+    <Content Include="Image\PetCage\Hamster\Note\Chuong4_note.png" />
+    <Content Include="Image\PetCage\Rabbit\Chuong1.png" />
+    <Content Include="Image\PetCage\Rabbit\Chuong2.png" />
+    <Content Include="Image\PetCage\Rabbit\Chuong3.png" />
+    <Content Include="Image\PetCage\Rabbit\Note\Chuong1_note.png" />
+    <Content Include="Image\PetCage\Rabbit\Note\Chuong2_note.png" />
+    <Content Include="Image\PetCage\Rabbit\Note\Chuong3_note.png" />
+    <Content Include="Image\Pet\Cats\Bengal.png" />
+    <Content Include="Image\Pet\Cats\BritishShorthair.png" />
+    <Content Include="Image\Pet\Cats\BrittishLonghair.png" />
+    <Content Include="Image\Pet\Cats\MaineCoon.png" />
+    <Content Include="Image\Pet\Cats\Mucnhkin.png" />
+    <Content Include="Image\Pet\Cats\PersianLonghair.png" />
+    <Content Include="Image\Pet\Cats\Ragdoll.png" />
+    <Content Include="Image\Pet\Cats\ScottishFold.png" />
+    <Content Include="Image\Pet\Cats\Xiem-cat.png" />
+    <Content Include="Image\Pet\Dogs\alaska.png" />
+    <Content Include="Image\Pet\Dogs\Chihuahua.png" />
+    <Content Include="Image\Pet\Dogs\corgi.png" />
+    <Content Include="Image\Pet\Dogs\Dachshund.png" />
+    <Content Include="Image\Pet\Dogs\French_Bulldog.png" />
+    <Content Include="Image\Pet\Dogs\Pomeranian.png" />
+    <Content Include="Image\Pet\Dogs\poodle.png" />
+    <Content Include="Image\Pet\Dogs\pug.png" />
+    <Content Include="Image\Pet\Dogs\Shiba.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterBear\HamsterBear-bosua.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterBear\HamsterBear-longxu.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterBear\HamsterBear-vangchanh.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterBear\HamsterBear-vangkhoangtrang.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterBear\HamsterBear-vangsoctrang.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterCampbell\HamsterCampbell-naulungden.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterCampbell\HamsterCampbell-xamlungden.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterRobo\HamsterRobo-mattrang.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterRobo\HamsterRobo-nau.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterRobo\HamsterRobo-nausua.png" />
+    <Content Include="Image\Pet\Hamsters\HamsterRobo\HamsterRobo-platinum.png" />
+    <Content Include="Image\Pet\Hamsters\WinterWhite\WinterWhite-sapphire.jpg" />
+    <Content Include="Image\Pet\Hamsters\WinterWhite\WinterWhite-trangsoc.png" />
+    <Content Include="Image\Pet\Hamsters\WinterWhite\WinterWhite-trasua.png" />
+    <Content Include="Image\Pet\Hamsters\WinterWhite\WinterWhite-vangchanh.png" />
+    <Content Include="Image\Pet\Rabbits\American.png" />
+    <Content Include="Image\Pet\Rabbits\BlancDeHotot.png" />
+    <Content Include="Image\Pet\Rabbits\California.png" />
+    <Content Include="Image\Pet\Rabbits\Hymalaya.png" />
+    <Content Include="Image\Pet\Rabbits\LionHead.png" />
+    <Content Include="Image\Pet\Rabbits\MiniLop.png" />
+    <Content Include="Image\Pet\Rabbits\MiniRex.png" />
+    <Content Include="Image\Pet\Rabbits\MiniSatin.png" />
+    <Content Include="Image\Pet\Rabbits\Rex.png" />
+    <Content Include="Image\ProductCategoryImage\down-arrow.png" />
+    <Content Include="Image\ProductCategoryImage\left.png" />
+    <Content Include="Image\ProductCategoryImage\list.png" />
+    <Content Include="Image\ProductCategoryImage\right.png" />
+    <Content Include="Image\ProductDetails\hot-sale.png" />
+    <Content Include="Image\ShoppedCart\delete.png" />
+    <Content Include="Image\ShoppingCartImg\coupon.png" />
+    <Content Include="Image\ShoppingCartImg\ico_emptycart.svg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap5\bootstrap.rtl.min.css.map" />
+    <EntityDeploy Include="Models\DBPetShop.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBPetShop.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DBPetShop.edmx.diagram">
+      <DependentUpon>DBPetShop.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\Homebanner.js" />
+    <Content Include="Scripts\HomeJS\ListFlashSale.js" />
+    <Content Include="Scripts\HomeJS\ListHamsterScript.js" />
+    <Content Include="Scripts\HomeJS\ListRabbitScript.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\bootstrap.bundle.js" />
+    <Content Include="Scripts\js\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\js\bootstrap.esm.js" />
+    <Content Include="Scripts\js\bootstrap.esm.min.js" />
+    <Content Include="Scripts\js\bootstrap.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Petscript.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\js\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\js\bootstrap.esm.js.map" />
+    <Content Include="Scripts\js\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\js\bootstrap.js.map" />
+    <Content Include="Scripts\js\bootstrap.min.js.map" />
+    <Content Include="Views\Shared\_MasterLayout.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\Home\ProductCategory.cshtml" />
+    <Content Include="Views\Home\InforUser.cshtml" />
+    <Content Include="Views\Home\ProductDetail.cshtml" />
+    <Content Include="Views\Home\ShoppingCart.cshtml" />
+    <Content Include="Views\Home\ShoppedCart.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\Menu\Create.cshtml" />
+    <Content Include="Views\Menu\Delete.cshtml" />
+    <Content Include="Views\Menu\Edit.cshtml" />
+    <Content Include="Views\Product\SelectIDProduct.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\TopPetPartial.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\DogPartial.cshtml" />
+    <Content Include="Views\ShoppingCart\ShowCart.cshtml" />
+    <Content Include="Views\ShoppingCart\BagCart.cshtml" />
+    <Content Include="Views\ShoppingCart\EmptyCart.cshtml" />
+    <Content Include="Views\Product\CatPartial.cshtml" />
+    <Content Include="Views\Product\HamsterPartial.cshtml" />
+    <Content Include="Views\Product\RabbitPartial.cshtml" />
+    <Content Include="Views\Product\MenuPartial.cshtml" />
+    <Content Include="Views\Product\GroupDogProduct.cshtml" />
+    <Content Include="Views\Product\ProductMenu.cshtml" />
+    <Content Include="Views\LoginCus\Index.cshtml" />
+    <Content Include="Views\Product\GroupCatProduct.cshtml" />
+    <Content Include="Views\Product\DogView.cshtml" />
+    <Content Include="Views\Product\CatView.cshtml" />
+    <Content Include="Views\Product\HamsterView.cshtml" />
+    <Content Include="Views\Product\RabbitView.cshtml" />
+    <Content Include="Views\LoginCus\ListAccount.cshtml" />
+    <Content Include="Views\LoginCus\InforUser.cshtml" />
+    <Content Include="Views\LoginCus\RegisterCusForm.cshtml" />
+    <Content Include="Views\LoginCus\CheckOut.cshtml" />
+    <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\Order\Details.cshtml" />
+    <Content Include="Views\Home\SearchByName.cshtml" />
+    <Content Include="Views\Product\Delete.cshtml" />
+    <Content Include="Views\Order\DetailsCus.cshtml" />
+    <Content Include="Views\LoginCus\Receipt.cshtml" />
+    <Content Include="Views\Product\SelectFur.cshtml" />
+    <Content Include="Views\Product\SelectSize.cshtml" />
+    <Content Include="Views\Product\SelectOrigin.cshtml" />
+    <Content Include="Views\Product\SelectPopular.cshtml" />
+    <Content Include="Views\Product\Detail.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\LoginCus\DeleteCus.cshtml" />
+    <Content Include="Views\Product\QuantityManagement.cshtml" />
+    <Content Include="Views\LoginCus\Details.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Order\AccountManagement.cshtml" />
+    <Content Include="Views\Product\FlashSale.cshtml" />
+    <Content Include="Views\LoginCus\Checkout_Success.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
+    <Content Include="Views\Admin\Delete.cshtml" />
+    <Content Include="Views\Admin\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54967</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54967/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

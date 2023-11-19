@@ -1,0 +1,57 @@
+﻿@model PetShopWebBKB.Models.Customer
+
+@{
+    ViewBag.Title = "RegisterCusForm";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<link href="~/Content/InforUserStyle.css" rel="stylesheet" />
+<div style="background-color: none; font-family: 'Segoe UI'; margin-bottom:34px" class="container-lg">
+    <div class="row">
+        <div style=" background-color: none; border-radius: 10px; padding: 12px 22px; border-radius: 5px; align-items: center; justify-content: center; display: flex; font-family: Verdana;">
+
+            @using (Html.BeginForm("RegisterCusForm", "LoginCus", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="col-md-12">
+                    <div style="background-color: white; border-radius: 20px; padding: 12px 22px; background-color: white ">
+                        <fieldset style="height: 90%; width: 700px; padding: 12px 22px; border-radius:10px">
+                            <p style="font-size:large">Đăng ký thông tin khách hàng</p>
+                            <div style="border-bottom: 1px solid rgba(0,0,0,0.1); margin: 12px 12px;">
+                                @if (ViewBag.ErrorNotEnough != null)
+                                {
+                                    <p style="color:red;">@ViewBag.ErrorNotEnough</p>
+                                }
+                                <p>Nhập tên đăng nhập: <input name="UserName" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" maxlength="15" placeholder="Nhập tên đăng nhập..." type="text" />@Html.ValidationMessageFor(model => model.UserName)</p>
+                                @if (ViewBag.ErrorUserName != null)
+                                {
+                                    <p style="color:red;">@ViewBag.ErrorUserName</p>
+                                }
+                                <p>
+                                    Nhập mật khẩu: <input name="PasswordCus" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" placeholder="Nhập mật khẩu..." type="password" />@Html.ValidationMessageFor(model => model.PasswordCus)
+                                </p>
+                                <p>Nhập lại mật khẩu: <input name="ConfirmPass" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" placeholder="Nhập lại mật khẩu..." type="password" />@Html.ValidationMessageFor(model => model.ConfirmPass) </p>
+                                <p>Nhập tên khách hàng: <input name="NameCustomer" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" maxlength="50" placeholder="Nhập tên khách hàng..." type="text" />@Html.ValidationMessageFor(model => model.NameCustomer)</p>
+                                <p>Nhập địa chỉ khách hàng: <input name="AddressCus" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" placeholder="Nhập địa chỉ khách hàng..." type="text" />@Html.ValidationMessageFor(model => model.AddressCus)</p>
+                                <p>Nhập Email khách hàng: <input name="Email" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" placeholder="Nhập Email khách hàng..." type="email" />@Html.ValidationMessageFor(model => model.Email)</p>
+                                <p>Nhập số điện thoại khách hàng: <input name="PhoneNumber" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" maxlength="11" placeholder="Nhập số điện thoại khách hàng..." type="tel" />@Html.ValidationMessageFor(model => model.PhoneNumber)</p>
+                                <p>Nhập ngày sinh khách hàng: <input name="DateOfBirth" style="width: 100%; height: 40px; border-color: burlywood; margin: 12px 0px; border-radius: 10px" placeholder="Nhập ngày sinh khách hàng..." type="date" />@Html.ValidationMessageFor(model => model.DateOfBirth)</p>
+                                @{if (ViewBag.ErrorRegisCusForm == null)
+                                    {
+                                        <p style="color:red;">@ViewBag.ErrorRegisCusForm</p>
+                                    }
+                                }
+                                @if (ViewBag.ErrorDateofBirth != null)
+                                {
+                                    <p style="color:red;">@ViewBag.ErrorDateofBirth</p>
+                                }
+                                <input class="btn" type="submit" value="Đăng ký thông tin" />
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

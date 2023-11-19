@@ -1,0 +1,154 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+<link rel="stylesheet" href="~/Content/HomeStyle.css" />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<section>
+    <div class="container-lg" style="height:auto">
+        <div style="float:left;">
+            <div class="slideshow" style="border-radius:20px;">
+                <div class="list_images">
+                    <img id="banner" src="~/Image/HomeImg/Banner/banner1.jpg" width="800">
+                    <img id="banner" src="~/Image/HomeImg/Banner/banner2.jpg" width="800">
+                    <img id="banner" src="~/Image/HomeImg/Banner/banner3.jpg" width="800">
+                </div>
+                <div id="buttons">
+                    <div id="left">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div id="right">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                </div>
+                <script language="Javascript" src="~/Scripts/Homebanner.js"></script>
+            </div>
+        </div>
+        <div style="float:left; height:230px; width:490px; margin-bottom:6px; margin-left:6px;">
+            <img src="~/Image/HomeImg/Banner/banner5.png" style="width:100%; height:100%; border-radius:20px;" />
+        </div>
+        <div style="float: left; height: 230px; width: 490px; margin-left: 6px;">
+            <img src="~/Image/HomeImg/Banner/banner4.png" style="width: 100%; height: 100%; border-radius: 20px;" />
+        </div>
+    </div>
+</section>
+<section class="container-lg" style="height:100px; margin-top:30px;"></section>
+<section class="container-lg" style="border-radius: 10px;">
+    @{Html.RenderAction("TopPetPartial", "Product"); }
+</section>
+<section class="container-lg" style="background-color:white; font-size:40px; height:100px; border-radius:10px 10px 0 0;">
+    <div style="transform:translateY(10px)"><i class='bx bx-category' style="font-size:35px; padding-right:10px; color:rosybrown;"></i>Danh mục sản phẩm</div>
+    <hr style="width:100%; color:grey; align-items:center;" />
+</section>
+<section class="container-lg" style="height:200px; display:flex;justify-content:center;align-items:center; margin-bottom:20px; border-radius: 0 0 10px 10px; background-color:white;">
+    <div id="icons"><a href="@Url.Action("DogView","Product")"><img src="~/Image/HomeImg/Icons/dog.png" /></a><p>Cún cưng</p></div>
+    <div id="icons"><a href="@Url.Action("CatView","Product")"><img src="~/Image/HomeImg/Icons/cat.png" /></a><p>Mèo cưng</p></div>
+    <div id="icons"><a href="@Url.Action("HamsterView","Product")"><img src="~/Image/HomeImg/Icons/hamster.png" /></a><p>Chuột cưng</p></div>
+    <div id="icons"><a href="@Url.Action("RabbitView","Product")"><img src="~/Image/HomeImg/Icons/rabbit.png" /></a><p>Thỏ cưng</p></div>
+</section>
+<section class="container-lg" id="top_pet" style="position:relative;">
+    <div class="row" id="header_top_pet" style="background-color: sandybrown"><h3>Dogs</h3></div>
+    <div id="formlistdog">
+        <div id="listdog">
+            <div class="directiondog">
+                <button id="prevdog"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                <button id="nextdog"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+            </div>
+            @{Html.RenderAction("DogPartial", "Product"); }
+            <script src="~/Scripts/HomeJS/ListDogScript.js"></script>
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet"><button style="background-color:sandybrown"><a href="@Url.Action("DogView","Product")" style="text-decoration:none; color:white">Xem thêm</a></button></div>
+</section>
+<section class="container-lg" id="top_pet" style="position:relative;">
+    <div class="row" id="header_top_pet" style="background-color: darksalmon">
+        <div class="col-3"><h3>Flash Sale</h3></div>
+        <div class="col-5" style="transform:translateY(5px)"><p id="countdown" style="font-size:40px;"></p></div>
+    </div>
+    <script>
+        function updateCountdown(targetDate) {
+            let now = new Date();
+            let diff = targetDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('countdown').innerHTML = "Expired";
+                return;
+            }
+
+            let days = Math.floor(diff / 1000 / 60 / 60 / 24);
+            let hours = Math.floor(diff / 1000 / 60 / 60) % 24;
+            let minutes = Math.floor(diff / 1000 / 60) % 60;
+            let seconds = Math.floor(diff / 1000) % 60;
+
+            document.getElementById('countdown').innerHTML = `Kết thúc trong: ${hours}h ${minutes}m ${seconds}s`;
+        }
+        let targetDate = new Date(2023, 10, 18, 24, 0, 0);
+        updateCountdown(targetDate);
+        setInterval(() => {
+            updateCountdown(targetDate);
+        }, 1000);
+    </script>
+    <div id="formlistsale">
+        <div id="listsale">
+            <div class="directionsale">
+                <button id="prevsale"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                <button id="nextsale"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+            </div>
+            @{Html.RenderAction("FlashSale", "Product"); }
+            <script src="~/Scripts/HomeJS/ListFlashSale.js"></script>
+        </div>
+    </div>
+</section>
+<section class="container-lg" id="top_pet" style="position:relative;">
+    <div class="row" id="header_top_pet" style="background-color:peru"><h3>Cats</h3></div>
+    <div id="formlistcat">
+        <div id="listcat">
+            <div class="directioncat">
+                <button id="prevcat"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                <button id="nextcat"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+            </div>
+            <script src="~/Scripts/HomeJS/ListCatScript.js"></script>
+            @{Html.RenderAction("CatPartial", "Product"); }
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet"><button style="background-color:peru"><a href="@Url.Action("CatView","Product")" style="text-decoration:none; color:white">Xem thêm</a></button></div>
+</section>
+<section class="container-lg" style="background-color:white; border-radius: 20px;margin-bottom:20px">
+    @{ Html.RenderAction("GroupCatProduct", "Product");}
+</section>
+<section class="container-lg" id="top_pet" style="position:relative;">
+    <div class="row" id="header_top_pet" style="background-color:peru"><h3>Rabbit</h3></div>
+    <div id="formlistrabbit">
+        <div id="listrabbit">
+            <div class="directionrabbit">
+                <button id="prevrabbit"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                <button id="nextrabbit"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+            </div>
+            <script src="~/Scripts/HomeJS/ListRabbitScript.js"></script>
+            @{Html.RenderAction("RabbitPartial", "Product"); }
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet"><button style="background-color:peru"><a href="@Url.Action("RabbitView","Product")" style="text-decoration:none; color:white">Xem thêm</a></button></button></div>
+</section>
+<section class="container-lg" id="top_pet" style="position:relative;">
+    <div class="row" id="header_top_pet" style="background-color:tan"><h3>Hamster</h3></div>
+    <div id="formlisthamster">
+        <div id="listhamster">
+            <div class="directionhamster">
+                <button id="prevhamster"><i class='bx bx-chevron-left' style="color: white; font-size: 30px; text-align: center; font-weight: bold;"></i></button>
+                <button id="nexthamster"><i class='bx bx-chevron-right' style="color:white; font-size:30px; text-align:center; font-weight:bold;"></i></button>
+            </div>
+            <script src="~/Scripts/HomeJS/ListHamsterScript.js"></script>
+            @{Html.RenderAction("HamsterPartial", "Product"); }
+        </div>
+    </div>
+    <div class="row" id="footer_top_pet"><button style="background-color:tan"><a href="@Url.Action("HamsterView","Product")" style="text-decoration:none; color:white">Xem thêm</a></button></div>
+</section>
+
+<section class="container-lg" style="background-color:white; border-radius: 20px;">
+    @{ Html.RenderAction("GroupDogProduct", "Product");}
+</section>
+

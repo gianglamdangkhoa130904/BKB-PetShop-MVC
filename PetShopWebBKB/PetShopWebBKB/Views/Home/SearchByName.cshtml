@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+@{
+    ViewBag.Title = "SearchByName";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    #title {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        font-family: Candara;
+        padding-left:20px
+    }
+
+    .item {
+        border-radius: 10px;
+        width: 300px;
+        height: 470px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right bottom,whitesmoke, darkseagreen);
+        box-shadow: 0px 5px 5px black;
+    }
+</style>
+<div class="container-lg" style="background-color:white; border-radius:20px; height:auto">
+    <div class="row" style="height: 100px; display: flex; justify-content: center; align-items: center; border-radius: 10px 10px 50% 50% "><div id="title">Kết quả cho "@Session["Search"]"</div></div>
+    <div class="row" style="height:auto; display:flex;justify-content:center; align-items:center;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            <div class="item" style="border: initial;">
+                <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                <div style="height:35%">
+                    <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                    <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                    <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    <div style="font-size:large; padding-left:10px;">
+                        @for (int i = 1; i <= rate; i++)
+                        {
+                            <i class='bx bxs-star' style="color:yellow;"></i>
+                        }
+                        @for (int i = 1; i <= 5 - rate; i++)
+                        {
+                            <i class='bx bxs-star' style="color:gray;"></i>
+                        }
+                    </div>
+                </div>
+                <div style="height:15%">
+                    <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                </div>
+            </div>
+        }
+    </div>
+</div>

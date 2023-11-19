@@ -1,0 +1,2 @@
+﻿@model PetShopWebBKB.Models.Size
+@Html.DropDownListFor(model => model.SizeID, new SelectList(Model.ListSize.OrderBy(model => model.SizeType), "SizeID", "SizeType"), "--Select Size--")

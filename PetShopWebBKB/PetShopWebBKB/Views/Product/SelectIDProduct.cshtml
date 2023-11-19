@@ -1,0 +1,3 @@
+﻿@model PetShopWebBKB.Models.Menu
+@Html.DropDownListFor(model => model.ProductID, new SelectList(Model.ListMenu.OrderBy(model => model.NameID), "ProductID", "NameID"), "--Select ID Product--")
+

@@ -1,0 +1,81 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.OrderDetail>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{int count = 1; }
+@{ int flag = 1; }
+<style>
+    tr {
+        border: solid black;
+        font-size: 30px;
+    }
+</style>
+
+<div class="container-lg">
+    <div style="margin-top: 10px;">
+        <h3 style="font-size:40px; margin-bottom:20px; text-align:center;">Chi tiết đơn hàng </h3>
+        <dl class="dl-horizontal">
+            <div class="content" style="width: 100%;">
+                <div class="content-right">
+                    <br />
+                    <h1 style="margin-left: 15%;">Thông tin khách hàng</h1>
+                    <br />
+                    @foreach (var order in Model)
+                    {
+                        <table align="center" style="width: 70%;">
+                            <tr>
+                                <th>Tên khách hàng: </th>
+                                <td>@Html.DisplayFor(model => order.NameCustomer)</td>
+                            </tr>
+                            <tr>
+                                <th>Email khách hàng: </th>
+                                <td>@Html.DisplayFor(model => order.Email)</td>
+                            </tr>
+                            <tr>
+                                <th>Số điện thoại: </th>
+                                <td>@Html.DisplayFor(model => order.PhoneNumber) </td>
+                            </tr>
+                            <tr>
+                                <th>Địa chỉ giao hàng: </th>
+                                <td>@Html.DisplayFor(model => order.AddressCus)</td>
+                            </tr>
+                        </table>
+                        break;
+                    }
+                    <br />
+                    <h1 style="margin-left: 15%;">Thông tin đơn hàng</h1>
+                    <br />
+                    @foreach (var order in Model)
+                    {
+                        <table class="table" align="center" style="width: 70%;">
+                            <tr>
+                                <th>Mã sản phẩm: </th>
+                                <td>@Html.DisplayFor(model => order.IDPro)</td>
+                            </tr>
+                            <tr>
+                                <th>Số lượng sản phẩm: </th>
+                                <td>@Html.DisplayFor(model => order.Quantity)</td>
+                            </tr>
+                            <tr>
+                                <th>Hình ảnh: </th>
+                                <td><img src="@Url.Content(order.ImageOrder)" height="100" width="100" style="margin-left: -16%;" /></td>
+                            </tr>
+                        </table>
+                        count++;
+                    }
+                    @foreach (var order in Model)
+                    {
+                        flag++;
+                        if (flag == count)
+                        {
+                            <h3 style="margin-left: 55%; font-size: 30px;">Tổng tiền: @Html.DisplayFor(model => order.UnitPrice) VND</h3>
+                        }
+                    }
+                    <h3 style="margin-left: 62%; font-size: 30px;">@Html.ActionLink("Back to List", "Index")</h3>
+                </div>
+            </div>
+        </dl>
+    </div>
+</div>

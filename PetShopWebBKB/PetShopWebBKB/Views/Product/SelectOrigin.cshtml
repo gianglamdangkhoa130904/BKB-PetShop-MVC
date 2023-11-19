@@ -1,0 +1,2 @@
+﻿@model PetShopWebBKB.Models.Origin
+@Html.DropDownListFor(model => model.OriginID, new SelectList(Model.ListOrigin.OrderBy(model => model.Origination), "OriginID", "Origination"), "--Select Origin--")

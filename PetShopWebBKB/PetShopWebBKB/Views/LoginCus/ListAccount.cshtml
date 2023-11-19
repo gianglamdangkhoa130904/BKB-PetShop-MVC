@@ -1,0 +1,95 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Customer>
+
+@{
+    ViewBag.Title = "ListAccount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-lg">
+    <h3 style="font-size: 40px; margin-top: 10px; margin-bottom: 10px; text-align: center;">Quản lý tài khoản khách hàng</h3>
+    <style>
+        #items td {
+            border-top: 1px solid black;
+            text-align: center;
+        }
+
+        #delete {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #delete a {
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+                font-weight: bold;
+            }
+
+                #delete a:hover {
+                    text-decoration: none;
+                    background-color: burlywood;
+                }
+    </style>
+    <table class="table" style="border: solid black; font-size: medium; border: solid black; text-align: center;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                Tên đăng nhập
+            </th>
+            <th>
+                Mật khẩu
+            </th>
+            <th>
+                Số điện thoại
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Chi tiết đơn hàng
+            </th>
+            <th>
+                Xóa tài khoản
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr id="items">
+                <td>
+                    <h2>@Html.DisplayFor(modelItem => item.ID)</h2>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PasswordCus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AddressCus)
+                </td>
+                <td>
+                    <div id="delete">
+                        @Html.ActionLink("Chi tiết", "AccountManagement", "Order", new { IDcus = item.ID }, "")
+                    </div>
+                </td>
+                <td>
+                    <div id="delete">
+                        @Html.ActionLink("Xóa tài khoản", "DeleteCus", new { id = item.ID })
+                    </div>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

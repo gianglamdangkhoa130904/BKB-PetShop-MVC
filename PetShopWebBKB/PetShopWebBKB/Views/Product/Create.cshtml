@@ -1,0 +1,121 @@
+﻿@model PetShopWebBKB.Models.Product
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    tr {
+        font-size: 20px;
+    }
+</style>
+<div class="container-lg">
+    <div class="row"><h3 style="display:flex;justify-content:center;align-items:center; font-size:40px; margin-top:10px; margin-bottom:10px">THÊM MỚI SẢN PHẨM</h3></div>
+    @{ if (ViewBag.ErrorPrice != null)
+        {
+            <p style="color:red; font-size:20px;">@ViewBag.ErrorPrice</p>
+        } }
+    @if (ViewBag.ErrorAge != null)
+    {
+        <p style="color:red; font-size:20px;">@ViewBag.ErrorAge</p>
+    }
+    @if (ViewBag.ErrorRating != null)
+    {
+        <p style="color:red; font-size:20px;">@ViewBag.ErrorRating</p>
+    }
+    @if (ViewBag.ErrorQuantity != null)
+    {
+        <p style="color:red; font-size:20px;">@ViewBag.ErrorQuantity</p>
+    }
+    @if (ViewBag.ErrorNotEnough != null)
+    {
+        <p style="color:red; font-size:20px;">@ViewBag.ErrorNotEnough</p>
+    }
+    @if (ViewBag.ErrorImage != null)
+    {
+        <p style="color:red; font-size:20px;">@ViewBag.ErrorImage</p>
+    }
+    @if (ViewBag.ErrorName != null)
+    {
+        <p style="color:red; font-size:20px;">@ViewBag.ErrorName</p>
+    }
+    <div class="row">
+
+        @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+        {
+            <table class="table-bordered" style="display:flex;justify-content:center;align-items:center;">
+
+                <tr>
+                    <td>@Html.LabelFor(model => model.Menu)</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.IDPro, (SelectList)ViewBag.listMenu)
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Fur)</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.IDFur, (SelectList)ViewBag.listFur)
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Size)</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.IDSize, (SelectList)ViewBag.listSize)
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Origin)</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.IDOrigin, (SelectList)ViewBag.listOrigin)
+                    </td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Popular)</td>
+                    <td>
+                        @Html.DropDownListFor(model => model.IDPopular, (SelectList)ViewBag.listPopular)
+                    </td>
+                </tr>
+                <tr>
+                    <td> @Html.LabelFor(model => model.NamePro)</td>
+                    <td> @Html.EditorFor(model => model.NamePro)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Price)</td>
+                    <td><input name="Price" style="width: 100%; height: 40px; margin: 12px 0px;"placeholder="Nhập giá" max="1000000000" min="1" type="number" />@Html.ValidationMessageFor(model => model.Price)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Age)</td>
+                    <td><input name="Age" style="width: 100%; height: 40px;  margin: 12px 0px;" placeholder="Nhập tuổi" max="10" min="1"type="number" />@Html.ValidationMessageFor(model => model.Age)</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.LabelFor(model => model.DescriptionPro)</td>
+                    <td>@Html.EditorFor(model => model.DescriptionPro)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.Rating)</td>
+                    <td><input name="Rating" style="width: 100%; height: 40px;margin: 12px 0px;" max="5" min="1" placeholder="Nhập đánh giá" type="number" />@Html.ValidationMessageFor(model => model.Rating)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(model => model.RemainQuantity)</td>
+                    <td><input name="RemainQuantity" style="width: 100%; height: 40px; margin: 12px 0px;" max="500" min="1" placeholder="Nhập số lượng" type="number" />@Html.ValidationMessageFor(model => model.RemainQuantity)</td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td>
+                        <img src="@Url.Content(Model.ImagePro)" height="150" width="150" id="preview" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="file" name="UploadImage" onchange="ChangeImage(this, document.getElementById('preview'))" />
+                        <input type="submit" value="Tạo mới" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+
+</div>
+
+

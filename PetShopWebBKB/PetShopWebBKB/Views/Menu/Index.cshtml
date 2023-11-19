@@ -1,0 +1,62 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Menu>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    tr {
+        border: solid black;
+        font-size: 30px;
+        text-align:center;
+    }
+    p a{
+        text-decoration:none;
+        color:black;
+    }
+        p a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    td a{
+        text-decoration:none;
+    }
+    td a:hover{
+        text-decoration:none;
+    }
+</style>
+<div class="container-lg">
+    <h3 style="font-size: 40px; margin-top: 10px; margin-bottom: 10px; text-align: center;">Menu</h3>
+    <p style="font-size:30px">
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NameID)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NameID)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+

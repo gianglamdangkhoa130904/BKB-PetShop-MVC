@@ -1,0 +1,62 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+<link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+<link rel="stylesheet" href="~/Content/HomeStyle.css" />
+<div class="row py-3" id="pets_main">
+
+    @foreach (var pro in Model)
+    {
+        if (pro.Menu.ProductID == "Cat")
+        {
+            <div class="col-xxl-3"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="width:306px; height:250px; border-radius:10px;" /></a></div>
+            break;
+        }
+        else
+        {
+            continue;
+        }
+    }
+    @foreach (var pro in Model)
+    {
+        if (pro.Menu.ProductID == "Dog")
+        {
+            <div class="col-xxl-3"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="width:306px; height:250px; border-radius:10px;" /></a></div>
+            break;
+        }
+        else
+        {
+            continue;
+        }
+    }
+    @foreach (var pro in Model)
+    {
+        if (pro == null)
+        {
+            break;
+        }
+        if (pro.Menu.ProductID == "Hamster")
+        {
+            <div class="col-xxl-3"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="width:306px; height:250px; border-radius:10px;" /></a></div>
+            break;
+        }
+        else
+        {
+            continue;
+        }
+    }
+    @foreach (var pro in Model)
+    {
+        if (pro == null)
+        {
+            break;
+        }
+        if (pro.Menu.ProductID == "Rabbit")
+        {
+            <div class="col-xxl-3"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="width:306px; height:250px; border-radius:10px;" /></a></div>
+            break;
+        }
+        else
+        {
+            continue;
+        }
+    }
+</div>

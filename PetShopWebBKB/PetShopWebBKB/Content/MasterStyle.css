@@ -1,0 +1,113 @@
+﻿body {
+}
+#search {
+    border: none;
+    border-radius: 20px;
+}
+
+    #search:hover {
+        box-shadow: 2px 2px 15px rosybrown inset;
+    }
+
+    #search:active {
+        border: none;
+    }
+
+#button_form_footer {
+    border: none;
+    background-color: burlywood;
+    color: white;
+    border-radius: 10px;
+}
+
+#regist {
+    border: none;
+    border-radius: 10px;
+}
+
+    #regist:active {
+        border: none;
+    }
+
+    #regist:visited {
+        border: none;
+    }
+#brand {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    float: left;
+}
+
+    #brand img {
+        width: 100%;
+        height: 100%;
+    }
+
+li {
+    font-size: smaller;
+    list-style-type: none;
+    transition: 0.5s;
+}
+
+    li:hover {
+        margin-left: 5px;
+        color: hotpink;
+    }
+
+#playstore {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+    #playstore img {
+        width: 100%;
+        height: 100%;
+    }
+
+#banking {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #banking img {
+        width: 140px;
+        height: 60px;
+        float: left;
+        margin-right: 20px;
+    }
+
+#shiping {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #shiping img {
+        width: 140px;
+        height: 60px;
+        float: left;
+        margin-right: 20px;
+    }
+.bodybkb{
+    margin-top: 10px;
+    height:auto;
+}
+
+.productInDetails > .productInDetailsLeft > p {
+    font-size: 15px;
+}
+
+.productInDetails > .productInDetailsRight > p {
+    font-size: 15px;
+}
+

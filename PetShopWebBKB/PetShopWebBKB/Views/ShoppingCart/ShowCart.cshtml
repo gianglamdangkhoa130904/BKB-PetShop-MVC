@@ -1,0 +1,84 @@
+﻿@model PetShopWebBKB.Models.Cart
+
+@{
+    ViewBag.Title = "ShowCart";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/ShowCartStyle.css" />
+<div class="container-lg">
+    <h2>Giỏ hàng: @Model.Total_quantity() sản phẩm</h2>
+    <a style="font-size: 20px; text-decoration: none;" href="~/Home/Index"><p>Quay lại trang chủ</p></a>
+    <div class="row">
+        <div class="col-8">
+            @if (Model != null)
+            {
+                <table class="table" style="border-radius: 10px;">
+                    <thead>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Hình sản phẩm</th>
+                            <th style="padding-left: 25px;">Giá</th>
+                            <th style="padding-left: 25px;">Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            decimal total = item._quantity * (decimal)item._pro.Price.Value;
+                            <tr>
+                                <td style="padding-top: 40px; padding-left: 30px;">@Html.DisplayFor(model => item._pro.NamePro) </td>
+                                <td style="padding-left: 14px;"><img src="@Url.Content(item._pro.ImagePro)" height="100" width="100" /></td>
+                                <td style="padding-top: 40px;">@Html.DisplayFor(model => item._pro.Price) </td>
+                                <td style="padding-top: 40px;">
+                                    @using (Html.BeginForm("Update_Cart_Quantity", "ShoppingCart"))
+                                    {
+                                        <input type="hidden" value="@item._pro.ID" name="ID" />
+                                        <input type="number" value="@item._quantity" min="1" name="cartQuantity" style="width: 70px;" />
+                                        <input type="submit" value="Update" style="width: 56px; font-size:13px; padding-top: 3px;" />
+                                    }
+                                </td>
+                                <td style="padding-top: 40px; padding-left: 22px;">@total</td>
+                                <td style="padding-top: 40px;">
+                                    <a href="/ShoppingCart/RemoveCart/@item._pro.ID"><img src="~/Image/ShoppedCart/delete.png" style="width: 20px; height: 20px;" /></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+
+            {
+                @Html.Partial("EmptyCart");
+            }
+        </div>
+        <div class="col-4">
+            <div class="showCartLeft" style="background-color: white; height: 370px; border-radius: 10px;">
+                <h2 style="margin-left: 10px;"><img src="~/Image/ShoppingCartImg/coupon.png" style="width: 25px; height: 25px;" /><span style="margin-left: 10px;">Khuyến mãi:</span> </h2>
+                <div class="coupon">
+                    <div style="margin-left: 35px; padding-top: 20px;">
+                        <p><b>MÃ GIẢM 500K - ĐƠN HÀNG TỪ 1TR5</b></p>
+                        <p>Không Áp Dụng Cho Mua Pet Tại Cửa Hàng</p>
+                        <a href="@Url.Action("Index", "Home")"><div style="margin-left: 100px;"><button id="muangay" style="background-color: aquamarine; border-radius: 10px;">MUA THÊM</button></div></a>
+                    </div>
+                </div>
+                <div class="coupon" style="margin-top: 10px;">
+                    <div style="margin-left: 35px; padding-top: 20px;">
+                        <p><b>MÃ GIẢM 500K - ĐƠN HÀNG TỪ 1TR5</b></p>
+                        <p>Không Áp Dụng Cho Mua Pet Tại Cửa Hàng</p>
+                        <a href="@Url.Action("Index", "Home")"><div style="margin-left: 100px;"><button id="muangay" style="background-color: aquamarine; border-radius: 10px;">MUA THÊM</button></div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="buy">
+                <div>
+                    <div style="float: left;"><p style="font-size: 20px; margin-left: 10px; margin-top: 5px;">Tổng tiền: </p></div>
+                    <div style="float: right; margin-right: 10px; margin-top: 5px;">@Model.Total_money()</div>
+                </div>
+                <button class="buyBtn" type="submit"><b><a href="/LoginCus/CheckOut/" style="text-decoration: none; color:white">Thanh toán</a></b></button>
+            </div>
+        </div>
+    </div>
+</div>

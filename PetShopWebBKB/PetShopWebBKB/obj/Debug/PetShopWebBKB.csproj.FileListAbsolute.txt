@@ -1,0 +1,897 @@
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+D:\Project2\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+E:\CrystalSellerWeb\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+D:\ProjectNopCo\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+F:\Bài tập\NewKBKShio\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+D:\ProjectNopCo\WalterWhite\WalterWhite\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+E:\PetShopWebBKB\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+D:\Programming\CODE\CC#M\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.dll
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.xml
+E:\Petshop\Petshop\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.xml
+E:\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.AssemblyReference.cache
+E:\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CoreCompileInputs.cache
+E:\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.dll
+E:\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.pdb
+E:\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll.config
+E:\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\PetShopWebBKB.pdb
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csc.rsp
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\csi.rsp
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Managed.Core.targets
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.AppContext.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Collections.Immutable.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Console.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Globalization.Calendars.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Http.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Net.Sockets.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Reflection.Metadata.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.ValueTuple.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\vbc.rsp
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe
+E:\PetShopWebBKB\PetShopWebBKB\bin\roslyn\VBCSCompiler.exe.config
+E:\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.Web.Infrastructure.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\WebGrease.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Helpers.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Mvc.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Optimization.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.Razor.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Deployment.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\System.Web.WebPages.Razor.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\Newtonsoft.Json.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\Antlr3.Runtime.pdb
+E:\PetShopWebBKB\PetShopWebBKB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PetShopWebBKB\PetShopWebBKB\obj\Debug\PetShopWebBKB.csproj.CopyComplete
+E:\PetShopWebBKB\PetShopWebBKB\bin\PagedList.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\PagedList.Mvc.dll
+E:\PetShopWebBKB\PetShopWebBKB\bin\PagedList.xml
+E:\PetShopWebBKB\PetShopWebBKB\bin\PagedList.Mvc.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PagedList.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PagedList.Mvc.dll
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PagedList.xml
+E:\Lập trình web\Đồ án\PetShopWebBKB\PetShopWebBKB\bin\PagedList.Mvc.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PagedList.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PagedList.Mvc.dll
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\EntityFramework.SqlServer.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PagedList.xml
+E:\Lập trình web\PetShopWebBKB\PetShopWebBKB\bin\PagedList.Mvc.xml

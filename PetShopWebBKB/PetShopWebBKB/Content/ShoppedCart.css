@@ -1,0 +1,46 @@
+﻿body {
+    
+}
+
+.content-shopped-cart {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.cart-left{
+    float: left;
+    width: 70%;
+}
+
+.content{
+    font-size: 20px;
+    height: 45px;
+    padding-top: 1%;
+    border-radius: 10px;
+}
+
+.product-quantity-box {
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 25%;
+    text-align:center;
+}
+
+.cart-right{
+    width: 35%;
+    height: 591px;
+    background-color: whitesmoke;
+    margin-left: 71%;
+    border-radius: 10px;
+}
+
+.coupon{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    height: 156px;
+}
+
+.pay{
+    margin-top:5%;
+}

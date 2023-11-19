@@ -1,0 +1,64 @@
+﻿@model PetShopWebBKB.Models.AdminUser
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    dt,dd{
+        font-size:20px;
+    }
+    #delete a{
+        font-size:25px;
+        text-decoration:none;
+    }
+    #delete input {
+        font-size:30px;
+        margin-right: 30px;
+        transform: translateY(-6px);
+    }
+</style>
+<div class="container-lg">
+    <h3 style="font-size: 40px">Delete</h3>
+
+    <h3 style="font-size:30px;">Are you sure you want to delete this?</h3>
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PasswordCus)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PasswordCus)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.RoleAdmin)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.RoleAdmin)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color" id="delete">
+                <input type="submit" value="Delete" class="btn btn-default" style="font-size:20px"/>
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</div>
+

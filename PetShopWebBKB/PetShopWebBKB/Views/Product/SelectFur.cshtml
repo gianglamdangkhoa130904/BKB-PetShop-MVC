@@ -1,0 +1,2 @@
+﻿@model PetShopWebBKB.Models.Fur
+@Html.DropDownListFor(model => model.FurID, new SelectList(Model.ListFur.OrderBy(model => model.FurType), "FurID", "FurType"), "--Select Fur--")

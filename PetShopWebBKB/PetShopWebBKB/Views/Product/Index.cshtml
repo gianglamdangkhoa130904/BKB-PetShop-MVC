@@ -1,0 +1,67 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    p a{
+        font-size:30px;
+        text-decoration:none;
+        color:black;
+    }
+</style>
+
+<div class="container-lg">
+    <h3 style="font-size:40px;">Danh sách sản phẩm</h3>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table" style="font-size:20px;">
+        <tr>
+            <th>
+                Tên:
+            </th>
+            <th>
+                Giá:
+            </th>
+            <th>
+                Đánh giá:
+            </th>
+            <th>
+                Tuổi:
+            </th>
+            <th>
+                Mô tả:
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NamePro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescriptionPro)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Detail", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+

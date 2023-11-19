@@ -1,0 +1,56 @@
+﻿@model PetShopWebBKB.Models.Cart
+
+@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .submit {
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+</style>
+<div class="container-lg">
+    <b><h2 align="center">Vui lòng kiểm tra lại đơn hàng</h2></b>
+    <table class="table" style="border-radius: 10px;">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Hình sản phẩm</th>
+                <th style="padding-left: 25px;">Giá</th>
+                <th style="padding-left: 25px;">Số lượng</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                decimal total = item._quantity * (decimal)item._pro.Price.Value;
+                <tr>
+                    <td style="padding-top: 40px; padding-left: 30px;">@Html.DisplayFor(model => item._pro.NamePro) </td>
+                    <td style="padding-left: 14px;"><img src="@Url.Content(item._pro.ImagePro)" height="100" width="100" /></td>
+                    <td style="padding-top: 40px;">@Html.DisplayFor(model => item._pro.Price) </td>
+                    <td style="padding-top: 40px; padding-left: 54px;">@Html.DisplayFor(model => item._quantity)</td>
+                    <td style="padding-top: 40px; padding-left: 22px;">@total</td>
+                    <td style="padding-top: 40px;">
+                        <a href="/ShoppingCart/RemoveCart/@item._pro.ID"><img src="~/Image/ShoppedCart/delete.png" style="width: 20px; height: 20px;" /></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @using (Html.BeginForm("CheckOut", "LoginCus"))
+    {
+        @Html.AntiForgeryToken();
+        <div align="center"><input class="submit" type="submit" name="CheckOut" value="Xác nhận mua hàng" /></div>
+    }
+</div>
+
+
+
+

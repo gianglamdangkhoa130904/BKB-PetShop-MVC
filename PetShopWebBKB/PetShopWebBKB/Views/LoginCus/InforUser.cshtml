@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Customer>
+
+@{
+    ViewBag.Title = "InforUser";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+    <link rel="stylesheet" href="~/Content/InforUserStyle.css" />
+    <link rel="stylesheet" href="~/Content/ProductCategoryStyle.css" />
+    <div style="background-color: #F0F0F0; font-family: 'Segoe UI'; border-radius: 10px" class="container-lg">
+        <div style="display: flex; flex-wrap: wrap;" class="row">
+            <div class="col-md-2" style="padding-right:6px; padding-left:0">
+                <nav style="background-color: white; border-radius: 10px;width:100%">
+                    <h3 style="color:red; font-size: 1.5rem; padding: 6px 6px; padding-top: 20px; border-bottom: 1px solid rgba(0,0,0,0.1);">&nbsp TÀI KHOẢN</h3>
+                    <div>
+                        <p style="color: coral" class="menu-item__link">Bảng điều khiển tài khoản</p>
+                        <p class="menu-item__link">Thông tin tài khoản</p>
+                        <p class="menu-item__link">Số địa chỉ</p>
+                        <a href="@Url.Action("Receipt", "LoginCus")"><p class="menu-item__link">Đơn hàng của tôi</p></a>
+                        <p class="menu-item__link">Ví voucher/Mã giảm giá</p>
+                    </div>
+
+                </nav>
+            </div>
+            @foreach (var a in Model)
+            {
+                <div class="col-md-10" style="padding-left:6px; padding-right:0">
+                    <div style=" background-color: white; border-radius: 10px; padding: 12px 22px">
+                        <p style="font-size:1.5rem">BẢNG ĐIỀU KHIỂN CỦA KHÁCH HÀNG</p>
+                        <fieldset style="background-color: antiquewhite; height: 90%; width: auto; padding: 12px 22px; border-radius:10px">
+                            <div style="border-bottom: 1px solid rgba(0,0,0,0.1)">
+                                <p>Họ và tên: <b>@Html.DisplayFor(model => a.NameCustomer)</b></p>
+                                <p>Email: <b>@Html.DisplayFor(model => a.Email)</b></p>
+                                <p>Địa chỉ khách hàng: <b>@Html.DisplayFor(model => a.AddressCus)</b></p>
+                                <p>Ngày sinh: <b>@Html.DisplayFor(model => a.DateOfBirth)</b></p>
+                                <p>Số điện thoại khách hàng: <b>@Html.DisplayFor(model => a.PhoneNumber)</b></p>
+                                <p>Thông tin tài khoản</p>
+                            </div>
+                            <div style="margin: 8px 3px;width:100%; justify-content: space-between; display: flex">
+                                <span>Freeship</span>  <span>0đ</span>  <span><a style="text-decoration:none; color:sandybrown">Xem thêm</a></span>
+                            </div>
+                            <div style="margin: 8px 3px;width:100%; justify-content: space-between; display: flex">
+                                <span>Hội thú cưng</span>  <span>sắp diễn ra</span>
+                            </div>
+                        </fieldset>
+                        <h2 style="border-bottom: 1px solid rgba(0,0,0,0.1);margin: 8px 0"><a style="color: red;text-decoration:none; font-size:xx-large" href=""><b>SỔ ĐỊA CHỈ</b></a></h2>
+                        <div style="margin: 8px 8px; width: 100%; justify-content: right; display: flex; padding-right: 6px">
+                            <span>ĐỊA CHỈ THANH TOÁN MẶC ĐỊNH</span>
+                        </div>
+                        <div style="margin: 8px 8px; width: 100%; justify-content: right; display: flex; padding-right: 6px">
+                            <span><b>@Html.DisplayFor(model => a.AddressCus)</b>.</span>
+                        </div>
+                        <div style="margin:8px 8px;width:100%; justify-content: right; display: flex; padding-right:6px">
+                            <a style="color: red;text-decoration:none;font-size:xx-large" href="@Url.Action("LogOutUser", "LoginCus")"><b>Đăng Xuất</b></a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

@@ -1,0 +1,282 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+@{
+    ViewBag.Title = "DogView";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    #title {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Candara;
+    }
+
+    .item {
+        border-radius: 10px;
+        width: 300px;
+        height: 470px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        background-color:white;
+        box-shadow: 0px 5px 5px black;
+    }
+</style>
+<script>
+    function Pet(a, b, c, d, e, f, g, h, i) {
+        document.getElementById(a).style.display = 'flex';
+        document.getElementById(b).style.display = 'none';
+        document.getElementById(c).style.display = 'none';
+        document.getElementById(d).style.display = 'none';
+        document.getElementById(e).style.display = 'none';
+        document.getElementById(f).style.display = 'none';
+        document.getElementById(g).style.display = 'none';
+        document.getElementById(h).style.display = 'none';
+        document.getElementById(i).style.display = 'none';
+    }
+</script>
+<style>
+    td p{
+        font-size:20px;
+    }
+    td p:hover {
+        cursor: pointer;
+        color: rosybrown;
+    }
+    td{
+        font-size:30px;
+        margin-bottom:10px;
+        text-align:center;
+    }
+</style>
+<div class="container-lg" style="background-color:white; border-radius:20px; height:auto">
+    <div class="row" style="height: 100px; display: flex; justify-content: center; align-items: center; background-image: linear-gradient(to right bottom,whitesmoke, rosybrown); margin-bottom: 20px; border-radius: 20px 20px 0 0;" onclick="Pet('Normal','LongFur','ShortFur','Big','Medium','Small','Hot','Popular','Rare')"><div id="title" style="text-align:center;">Cún cưng</div></div>
+    <div class="row" style="height:auto; display:flex;justify-content:center; align-items:center;">
+        <table style="text-align:center; font-size:20px; margin-top:20px;">
+            <tr>
+                <td>
+                    <p id="normal" onclick="Pet('Normal','LongFur','ShortFur','Big','Medium','Small','Hot','Popular','Rare')">Kiểu lông:</p>
+                </td>
+                <td>
+                    <p id="normal" onclick="Pet('Normal','LongFur','ShortFur','Big','Medium','Small','Hot','Popular','Rare')">Kích thước:</p>
+
+                </td>
+                <td>
+                    <p id="normal" onclick="Pet('Normal','LongFur','ShortFur','Big','Medium','Small','Hot','Popular','Rare')">Độ phổ biến:</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="longfur" onclick="Pet('LongFur','Normal','ShortFur','Big','Medium','Small','Hot','Popular','Rare')">Lông dài</p>
+                </td>
+                <td>
+                    <p value="big" onclick="Pet('Big','LongFur','ShortFur','Normal','Medium','Small','Hot','Popular','Rare')">Lớn</p>
+                </td>   
+                <td>
+                    <p value="hot" onclick="Pet('Hot','LongFur','ShortFur','Big','Medium','Small','Normal','Popular','Rare')">Hot</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="shortfur" onclick="Pet('ShortFur','Normal','LongFur','Big','Medium','Small','Hot','Popular','Rare')">Lông ngắn</p>
+                </td>
+                <td>
+                    <p value="medium" onclick="Pet('Medium','LongFur','ShortFur','Normal','Big','Small','Hot','Popular','Rare')">Trung bình</p>
+                </td>
+                <td>
+                    <p value="popular" onclick="Pet('Popular','LongFur','ShortFur','Big','Medium','Small','Hot','Normal','Rare')">Phổ biến</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p value="small" onclick="Pet('Small','LongFur','ShortFur','Normal','Big','Medium','Hot','Popular','Rare')">Nhỏ</p>
+                </td>
+                <td>
+                    <p value="rare" onclick="Pet('Rare','LongFur','ShortFur','Big','Medium','Small','Hot','Normal','Popular')">Hiếm</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</div>
+<div class="container-lg" style="background-color:none; border-radius:20px; height:auto; margin-top:20px;">
+    <div class="row" id="Normal" style="height:auto; display:flex;justify-content:center; align-items:center; margin-top:20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            <div class="item" style="border: initial;">
+                <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                <div style="height:35%">
+                    <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                    <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                    <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                </div>
+                <div style="height:15%">
+                    <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="row" id="LongFur" style="height: none; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDFur == "Long")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="ShortFur" style="height: none; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDFur == "Short")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="Big" style="height: auto; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDSize == "Big")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="Medium" style="height: auto; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDSize == "Medium")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="Small" style="height: auto; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDSize == "Small")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="Hot" style="height: auto; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDPopular == "hot")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="Popular" style="height: auto; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDPopular == "popular")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="row" id="Rare" style="height: auto; display: none; justify-content: center; align-items: center; margin-top: 20px;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            if (pro.IDPopular == "rare")
+            {
+                <div class="item" style="border: initial;">
+                    <div style="height:50%; width:100%; margin-top:10px; "><a href="@Url.Action("Details", "Product", new { id = pro.ID })"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center; font-family:cursive; padding-top:10px">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                    </div>
+                    <div style="height:15%">
+                        <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color: black">Buy</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

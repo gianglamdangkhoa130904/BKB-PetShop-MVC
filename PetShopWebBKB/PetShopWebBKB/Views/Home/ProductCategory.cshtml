@@ -1,0 +1,167 @@
+﻿
+@{
+    ViewBag.Title = "ProductCategory";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/ProductCategoryStyle.css" />
+<div style="background-color: #F5F5F5; font-family: 'Segoe UI'; width: 100%; height: 100%;">
+    <div style="width: 100%; max-width: 100%; margin: auto;">
+        <div style="display: flex; flex-wrap: wrap; margin-left: -1x2px; margin-right: -12px">
+            <div style="padding-right: 2%; padding-left: 2%; width: 20%;">
+                <nav style="background-color: white; border-radius: 2px;">
+                    <h3 style="color: black; font-size: 1.5rem; padding: 6px 6px; padding-top: 20px; border-bottom: 1px solid rgba(0,0,0,0.1) ">&nbsp <img class="category__heading--list-img" src="~/Image/ProductCategoryImage/list.png" /> Danh mục</h3>
+
+                    <ul style="padding: 0 0 8px 0; list-style: none; margin-left: 16px;">
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom:12px;" class="category-item category-item--active">
+                            <a href="" class="category-item__link">Mèo kiểng</a>
+                            <a href="" class="category-item__link_item category-item--active"><b>Các Loại Mèo Kiểng</b></a><br />
+                            <a href="" class="category-item__link_item category-item--active">Thức Ăn Cho Mèo</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Chuồng Nuôi Mèo Kiểng</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Phụ Kiện Nuôi Mèo</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Đồ Chơi Cho Mèo</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Cách Nuôi Mèo Kiểng</a>
+                        </li>
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 12px;" class="category-item">
+                            <a href="" class="category-item__link">Chó Kiểng</a>
+                            <a href="" class="category-item__link_item category-item--active"><b>Các Loại Chó Kiểng</b></a><br />
+                            <a href="" class="category-item__link_item category-item--active">Thức Ăn Cho Chó</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Chuồng Nuôi Chó Kiểng</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Phụ Kiện Nuôi Chó Kiểng</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Đồ Chơi Cho Chó</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Cách Nuôi Chó Cảnh</a>
+                        </li>
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 12px;" class="category-item">
+                            <a href="" class="category-item__link">Thỏ Kiểng</a>
+                            <a href="" class="category-item__link_item category-item--active"><b>Các Loại Thỏ Kiểng</b></a><br />
+                            <a href="" class="category-item__link_item category-item--active">Thức Ăn Cho Thỏ Kiểng</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Chuồng Nuôi Thỏ</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Phụ Kiện Nuôi Thỏ Kiểng</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Đồ Chơi Cho Thỏ Kiểng</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Cách Nuôi Thỏ Kiểng</a>
+                        </li>
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 12px;" class="category-item">
+                            <a href="" class="category-item__link">Chuột Hamster</a>
+                            <a href="" class="category-item__link_item category-item--active"><b>Các Loại Hamster</b></a><br />
+                            <a href="" class="category-item__link_item category-item--active">Thức Ăn Cho Hamster</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Chuồng Hamster</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Phụ Kiện Hamster</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Đồ Chơi Hamster</a><br />
+                            <a href="" class="category-item__link_item category-item--active">Cách Nuôi Hamster</a>
+                        </li>
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1)" class="category-item"><a href="" class="category-item__link">Mỹ Phẩm Cho Pet</a></li>
+
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1)" class="category-item"><a href="" class="category-item__link">Thuốc Bổ, Trị Bệnh</a></li>
+
+                        <li style="border-bottom: 1px solid rgba(0,0,0,0.1)" class="category-item"><a href="" class="category-item__link">Quần Áo Cho Pet</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div style="width: 75%;">
+                <div style="background-color: white; border-radius: 2px; width: 100%; max-width: 100%; display: flex; height: 3.5%; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.1) ">
+                    <span style="color: black; font-size: 1.5rem; padding: 6px 6px;">&nbsp <b>Sắp xếp theo:</b></span>&nbsp
+                    <button style=" background-color: burlywood;" class="btn">Mới nhất</button>
+                    <button class="btn">Nổi bật</button>
+                    <button class="btn">Bán chạy</button>
+                    <button class="btn">Giá tăng dần &nbsp <div class="caret-left"></div> </button>
+                    <button class="btn">Giá giảm dần &nbsp <div class="caret-right"></div> </button>
+                </div>
+
+                <div style="width: 100%; height: 85%; background-color: white;">
+
+                    <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/Bengal.png" />
+                            <div class="name-price" align="center">
+                                <p style="padding-top: 5px;">Bengal</p>
+                                <p style="padding-top: 5px;"><b style="color:red">Price: 5.000.000đ</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/BritishShorthair.png" />
+                            <div class="name-price" align="center">
+                                <p style="padding-top: 5px;">British Short Hair</p>
+                                <p style="padding-top: 5px;"><b style="color:red">Giá: 10.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/BrittishLonghair.png" />
+                            <div class="name-price" align="center">
+                                <p style="padding-top: 5px;">British Long Hair</p>
+                                <p style="padding-top: 5px;"><b style="color:red">Giá: 10.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/MaineCoon.png" />
+                            <div class="name-price" align="center">
+                                <p style="padding-top: 5px;">MaineCoon</p>
+                                <p style="padding-top: 5px;"><b style="color:red">Giá: 20.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/Mucnhkin.png" />
+                            <div class="name-price" align="center">
+                                <p style="padding-top: 5px;">MunchKin cute</p>
+                                <p style="padding-top: 5px;"><b style="color:red">Giá: 20.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/PersianLonghair.png" />
+                            <div class="name-price" align="center">
+                                <p style=" padding-top: 5px;">Persian Long Hair</p>
+                                <p style=" padding-top: 5px;"><b style="color:red">Giá: 8.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/Ragdoll.png" />
+                            <div class="name-price" align="center">
+                                <p style=" padding-top: 5px;">Ragdoll</p>
+                                <p style=" padding-top: 5px;"><b style="color:red">Giá: 12.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/ScottishFold.png" />
+                            <div class="name-price" align="center">
+                                <p style=" padding-top: 5px;">Scottish Fold</p>
+                                <p style=" padding-top: 5px;"><b style="color:red">Giá: 24.000.000VND</b></p>
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <img class="size-img" src="~/Image/Pet/Cats/Xiem-cat.png" />
+                            <div class="name-price" align="center">
+                                <p style="padding-top: 5px;">Mèo Xiêm</p>
+                                <p style="padding-top: 5px;"><b style="color:red">Giá: 100.000.000VND</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div style="background-color: white; border-radius: 2px; width: 100%; max-width: 100%; display: flex; margin-top: 24px; justify-content:center">
+                        <a class="page" href="">1</a>
+                        <a class="page" href="">2</a>
+                        <a class="page" href="">3</a>
+                        <a class="page" href="">4</a>
+                        <a class="page" href="">5</a>
+                        <a class="page" href="">6</a>
+                        <a class="page" href="">7</a>
+                        <a class="page" href="">...</a>
+                        <a class="page" href="">15</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

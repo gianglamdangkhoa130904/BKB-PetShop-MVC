@@ -1,0 +1,59 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.OrderPro>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    tr {
+        border: solid black;
+        font-size: 30px;
+    }
+    td a{
+        text-decoration:none;
+    }
+</style>
+<div class="container-lg" style="margin-top: 10px;">
+    <br />
+    <h3 style="font-size:40px; margin-bottom:10px;">Các đơn của khách hàng: </h3>
+    <table class="table">
+        <tr>
+            <td align="center">
+                <b>@Html.DisplayNameFor(model => model.ID)</b>
+            </td>
+            <td align="center">
+                <b>@Html.DisplayNameFor(model => model.DateOrder)</b>
+            </td>
+            <td align="center">
+                <b>@Html.DisplayNameFor(model => model.IDcus)</b>
+            </td>
+            <td align="center">
+                <b>@Html.DisplayNameFor(model => model.Total)</b>
+            </td>
+            <td align="center"><b>Chi tiết</b></td>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.DateOrder)
+                </td>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.IDcus)
+                </td>
+                <td align="center">
+                    @Html.DisplayFor(modelItem => item.Total) VND
+                </td>
+                <td align="center">
+                    |@Html.ActionLink("Chi tiết đơn hàng", "Details", new { id = item.ID })|
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+@{
+    ViewBag.Title = "ProductMenu";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/ProductCategoryStyle.css" />
+<div style="background-color: #F0F0F0; font-family: 'Segoe UI'; width: 100%; height: 100%; border-radius: 10px" class="container-lg">
+    <div style="display: flex; flex-wrap: wrap; margin: 0" class="row">
+        <div class="col-md-2">
+            <div style="background-color: white; border-radius: 10px ; height:500px;margin:0;padding:0">
+                <a href="/Product/ProductMenu" style="color: black;text-decoration:none; font-size: 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 4px 4px; display:flex; align-items:center;">&nbsp <img width="15" height="15" style="margin-right: 5px" src="~/Image/ProductCategoryImage/list.png" /> Danh mục</a>
+                <ul id="cate">
+                    <li id="firstcate">
+                        @Html.ActionLink("Mèo", "ProductMenu", "Product", new { TypePro = "Cat" }, "")
+                    </li>
+                </ul>
+                <ul id="cate">
+                    <li id="firstcate">
+                        @Html.ActionLink("Chó", "ProductMenu", "Product", new { TypePro = "Dog" }, "")
+                    </li>
+                </ul>
+                <ul id="cate">
+                    <li id="firstcate">
+                        @Html.ActionLink("Thỏ", "ProductMenu", "Product", new { TypePro = "Rabbit" }, "")
+                    </li>
+                </ul>
+                <ul id="cate">
+                    <li id="firstcate">
+                        @Html.ActionLink("HamsTer", "ProductMenu", "Product", new { TypePro = "Hamster" }, "")
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="row">
+                <img style="height:320px; border-radius:10px;" class="img-fluid img-thumbnail" src="~/Image/ProductCategoryImage/bannerpet5.png" />               
+                @{Html.RenderAction("MenuPartial", "Product");}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

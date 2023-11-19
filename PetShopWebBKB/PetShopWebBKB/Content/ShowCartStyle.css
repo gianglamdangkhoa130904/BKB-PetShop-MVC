@@ -1,0 +1,27 @@
+﻿body {
+}
+
+.coupon {
+    border: 1px solid black;
+    width: 90%;
+    height: 150px;
+    background-color: floralwhite;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.buy{
+    background-color: white;
+    margin-top: 10px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+.buyBtn{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 20px;
+}

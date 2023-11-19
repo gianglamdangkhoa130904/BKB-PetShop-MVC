@@ -1,0 +1,67 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.OrderPro>
+
+@{
+    ViewBag.Title = "AccountManagement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    tr {
+        border: solid black;
+        font-size: 30px;
+    }
+
+    td a {
+        text-decoration: none;
+    }
+    #delete {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #delete a {
+            text-decoration: none;
+            font-size: 2.5rem;
+            color: black;
+            font-weight: bold;
+        }
+
+            #delete a:hover {
+                text-decoration: none;
+                background-color: burlywood;
+            }
+</style>
+<div class="container-lg" style="margin-top: 10px;">
+    <h3 style="font-size:40px; margin-bottom:10px;">Các đơn của khách hàng: </h3>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOrder)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOrder)
+                </td>
+                <td>
+                    <div id="delete">
+                        @Html.ActionLink("Chi tiết đơn hàng", "Details", new { id = item.ID })
+                    </div>
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

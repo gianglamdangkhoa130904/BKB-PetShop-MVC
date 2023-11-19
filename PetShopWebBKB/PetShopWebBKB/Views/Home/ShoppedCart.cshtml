@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "ShoppedCart";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/ShoppedCart.css"/>
+<div class="container-lg" style="padding-left:0;padding-right:0">
+    <div class="row">
+        <div class="content-shopped-cart">
+            <h2>Giỏ hàng: 3 sản phẩm</h2>
+            <div class="col-xxl-8" style="float:left;">
+                <div class="content" style="background-color: white">
+                    <div id="checkbox" style="float: left; margin-left: 2%;"><input style="width: 20px; height: 20px;" type="checkbox" /></div>
+                    <div style="float: left; margin-left: 2%">Chọn tất cả ( 3 sản phẩm )</div>
+                    <div style="float: left; margin-left: 31%">Số lượng</div>
+                    <div style="margin-left: 82%">Thành tiền</div>
+                </div>
+                <div class="details">
+                    <div class="item-product-cart" style="background-color: white; height: 160px; margin-top: 2%; border-radius: 10px;">
+                        <div class="checked-product-cart" style="float: left; margin-top: 6%; margin-left: 2%;"><input style="width: 20px; height: 20px;" type="checkbox" /></div>
+                        <div class="image-product-cart" style="float: left; margin-left: 7%; padding-top: 2%"><img src="~/Image/Pet/Cats/Bengal.png" style="width: 119px; height: 119px;" /></div>
+                        <div class="group-product-cart-info" style="margin-left: 26%;">
+                            <div class="info-product-cart" style="float:left; margin-left: 5%;">
+                                <div>
+                                    <p class="product-name" style="font-size:22px;">Bé mèo cute phô mai que</p>
+                                    <h3 class="price-orinal" style="padding-top: 17%">100.000VND</h3>
+                                </div>
+                            </div>
+                            <div class="number-product-cart" style="margin-left: 52%; padding-top:8%;">
+                                <div class="product-quantity-box" style="float:left;">
+                                    <button id="plusminus" onclick="decrement();">-</button>
+                                    <span id="quantity">0</span>
+                                    <button id="plusminus" onclick="increment();">+</button>
+                                </div>
+                                <div class="price-total" style="margin-left: 24%; float:left;">100.000VND</div>
+                                <div class="delete-btn" style="margin-left: 85%;"><img src="~/Image/ShoppedCart/delete.png" style="width: 19px; height: 22px;" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-product-cart" style="background-color: white; height: 160px; margin-top: 2%; border-radius: 10px;">
+                        <div class="checked-product-cart" style="float: left; margin-top: 6%; margin-left: 2%;"><input style="width: 20px; height: 20px;" type="checkbox" /></div>
+                        <div class="image-product-cart" style="float: left; margin-left: 7%; padding-top: 2%"><img src="~/Image/Pet/Cats/Bengal.png" style="width: 119px; height: 119px;" /></div>
+                        <div class="group-product-cart-info" style="margin-left: 26%;">
+                            <div class="info-product-cart" style="float: left; margin-left: 5%;">
+                                <div>
+                                    <p class="product-name" style="font-size:22px;">Bé mèo cute phô mai que</p>
+                                    <h3 class="price-orinal" style="padding-top: 17%;">100.000VND</h3>
+                                </div>
+                            </div>
+                            <div class="number-product-cart" style="margin-left: 52%; padding-top:8%;">
+                                <div class="product-quantity-box" style="float:left;">
+                                    <button id="plusminus" onclick="decrement();">-</button>
+                                    <span id="quantity">0</span>
+                                    <button id="plusminus" onclick="increment();">+</button>
+                                </div>
+                                <div class="price-total" style="margin-left: 24%; float:left;">100.000VND</div>
+                                <div class="delete-btn" style="margin-left: 85%;"><img src="~/Image/ShoppedCart/delete.png" style="width: 19px; height: 22px;" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-product-cart" style="background-color: white; height: 160px; margin-top: 2%; border-radius: 10px;">
+                        <div class="checked-product-cart" style="float: left; margin-top: 6%; margin-left: 2%;"><input style="width: 20px; height: 20px;" type="checkbox" /></div>
+                        <div class="image-product-cart" style="float: left; margin-left: 7%; padding-top: 2%"><img src="~/Image/Pet/Cats/Bengal.png" style="width: 119px; height: 119px;" /></div>
+                        <div class="group-product-cart-info" style="margin-left: 26%;">
+                            <div class="info-product-cart" style="float: left; margin-left: 5%;">
+                                <div>
+                                    <p class="product-name" style="font-size:22px;">Bé mèo cute phô mai que</p>
+                                    <h3 class="price-orinal" style="padding-top: 17%;">100.000VND</h3>
+                                </div>
+                            </div>
+                            <div class="number-product-cart" style="margin-left: 52%; padding-top:8%;">
+                                <div class="product-quantity-box" style="float:left;">
+                                    <button id="plusminus" onclick="decrement();">-</button>
+                                    <span id="quantity">0</span>
+                                    <button id="plusminus" onclick="increment();">+</button>
+                                </div>
+                                <div class="price-total" style="margin-left: 24%; float:left">100.000VND</div>
+                                <div class="delete-btn" style="margin-left: 85%;"><img src="~/Image/ShoppedCart/delete.png" style="width: 19px; height: 22px;" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4" style="float:right; width: 32%">
+                <div class="list-coupon" style="background-color: white; border-radius: 10px;">
+                    <p style="padding-left: 2%; font-size: 25px;"><b>Khuyến mãi: </b></p>
+                    <div class="coupon" style="margin-top: 3%;">
+                        <p align="center" style="font-size: 23px;"><b>Mã giảm 100k - Đơn hàng từ 1tr</b></p>
+                        <p align="center">Không áp dụng phiếu cho quà tặng và nhận nuôi pet</p>
+                        <div align="center" class="coupon-btn"><button type="submit" style="background-color: blue; color: white; width: 100px; height: 30px; border-radius: 10px;">Mua thêm</button></div>
+                    </div>
+                    <div class="coupon" style="margin-top: 3%;">
+                        <p align="center" style="font-size: 23px;"><b>Mã giảm 200k - Đơn hàng từ 2tr</b></p>
+                        <p align="center">Không áp dụng phiếu cho quà tặng và nhận nuôi pet</p>
+                        <div align="center" class="coupon-btn"><button type="submit" style="background-color: blue; color: white; width: 100px; height: 30px; border-radius: 10px;">Mua thêm</button></div>
+                    </div>
+                </div>
+                <div class="pay" style="background-color: white; height: 180px; border-radius: 10px;">
+                    <p style="font-size: 20px; padding-top: 2%; padding-left: 2%;">Thành tiền: </p>
+                    <p style="padding-left: 2%; font-size: 25px;"><b>Tổng số tiền (gồm VAT): </b></p>
+                    <div style="padding-top: 1%;" align="center" class="pay-btn"><a href="Home"><button type="submit" style="font-size: 30px; background-color: red; color: white; width: 90%; height: 60px; border-radius: 10px;">THANH TOÁN</button></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script language="Javascript">
+    var quantityElement = document.getElementById('quantity');
+    var quantity = 0;
+
+    function increment() {
+        quantity++;
+        updateQuantity();
+    }
+
+    function decrement() {
+        if (quantity > 0) {
+            quantity--;
+            updateQuantity();
+        }
+    }
+
+    function updateQuantity() {
+        quantityElement.innerHTML = quantity;
+    }
+</script>

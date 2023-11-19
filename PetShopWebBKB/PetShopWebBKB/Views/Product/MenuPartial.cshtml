@@ -1,0 +1,95 @@
+﻿@using PetShopWebBKB.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<Product>
+
+<link rel="stylesheet" href="~/Content/ProductCategoryStyle.css" />
+<link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+
+<script>
+    function DropDown(element) {
+        let menu = document.getElementsByClassName("menu");
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].classList.remove("active");
+        }
+        element.nextElementSibling.classList.add("active");
+        window.onclick = function (event) {
+            let active = document.querySelector(".active")
+            if (active && !event.target.matches(".btn")) {
+                active.classList.remove("active")
+            }
+        }
+    }
+
+    function Page(a, b, c, d) {
+        document.getElementById(a).style.display = 'flex';
+        document.getElementById(b).style.display = 'none';
+        document.getElementById(c).style.display = 'none';
+        document.getElementById(d).style.display = 'none';
+    }
+</script>
+
+<div style="background-color: white; border-radius: 10px; display: flex; align-items: center; border-bottom: 1px solid rgba(0,0,0,0.1); margin: 6px 0;padding: 10px 0 ">
+    <span style="color: black; font-size: medium; padding: 6px 6px;">&nbsp <b>Sắp xếp theo:</b></span>&nbsp
+    <button style=" background-color: burlywood; border-radius:10px" class="btn">Mới nhất</button>
+    <div class="dropdown">
+        <button style="border-radius:10px" class="btn" onclick="DropDown(this)">Giá</button>
+        <div class="menu">
+            <ul>
+                <li>
+                    <button type="button" onclick="Page('PageNewpro','PageSortasc','PageSortdesc','Page')" class="change">@Html.ActionLink("Bán chạy", "ProductMenu", "Product", new { TypePro = ViewBag.typepro, NewPro = "yes" }, "") </button>
+                </li>
+                <li>
+                    <button type="button" onclick="Page('PageSortasc','PageSortdesc','PageNewpro','Page')" class="change">@Html.ActionLink("Giá thấp đến cao", "ProductMenu", "Product", new { TypePro = ViewBag.typepro, sort = "asc" }, "")<div class="caret-left"></div> </button>
+                </li>
+                <li>
+                    <button type="button" onclick="Page('PageSortdesc','PageSortasc','PageNewpro','Page')" class="change">@Html.ActionLink("Giá cao đến thấp", "ProductMenu", "Product", new { TypePro = ViewBag.typepro, sort = "desc" }, "")<div class="caret-right"></div> </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="background-color: white; border-radius: 10px; margin: 3px 0px; justify-content:center;">
+    <div style="display: flex; margin-top: 6px; justify-content:center; padding-top:5px">
+        <div id="Page" class="page">
+            @Html.PagedListPager(Model, page => Url.Action("ProductMenu", new { page = page, TypePro = ViewBag.typepro, Sort = ViewBag.sort }))
+        </div>
+        <div id="PageNewpro" style="display:none ; color:blue" class="page">
+            @Html.PagedListPager(Model, page => Url.Action("ProductMenu", new { page = page, TypePro = ViewBag.typepro, NewPro = "yes" }))
+        </div>
+        <div id="PageSortasc" style="display:none" class="page">
+            @Html.PagedListPager(Model, page => Url.Action("ProductMenu", new { page = page, TypePro = ViewBag.typepro, Sort = "asc" }))
+        </div>
+        <div id="PageSortdesc" style="display:none" class="page">
+            @Html.PagedListPager(Model, page => Url.Action("ProductMenu", new { page = page, TypePro = ViewBag.typepro, Sort = "desc" }))
+        </div>
+    </div>
+</div>
+
+<div style="background-color: white;border-radius: 10px;margin: 6px 0">
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+        @foreach (var pro in Model)
+        {
+            int? rate = pro.Rating;
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product">
+                    <a href="@Url.Action("Details","Product", new { id = pro.ID})"><img id="size-img" class="img-fluid" src="@Url.Content(pro.ImagePro)" /></a>
+                    <div style="margin: 0;margin-left:20px" align="left">
+                        <div style="margin-top:5px">@Html.DisplayFor(model => pro.NamePro)</div>
+                        <div style="padding:0; color:red">@Html.DisplayFor(model => pro.Price)đ</div>
+                        <div style="font-size:large; padding-left:10px;">
+                            @for (int i = 1; i <= rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:gold;"></i>
+                            }
+                            @for (int i = 1; i <= 5 - rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:gray;"></i>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

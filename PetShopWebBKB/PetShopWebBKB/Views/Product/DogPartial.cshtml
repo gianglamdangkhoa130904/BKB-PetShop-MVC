@@ -1,0 +1,115 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+<style>
+    .directiondog {
+        text-align: center;
+        height: 100px;
+        margin-left:40px;
+        width: 1225px;
+        top: 50%;
+        position: absolute;
+    }
+
+        .directiondog #prevdog {
+            background-color: sandybrown;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            position: absolute;
+            transform:translateX(-25px);
+            transition: 1s;
+            box-shadow: 5px 0 5px peru;
+            right: 100%;
+        }
+        .directiondog #nextdog {
+            background-color: sandybrown;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            position: absolute;
+            transition: 1s;
+            box-shadow: 5px 0 5px peru;
+            left: 100%;
+        }
+        .directiondog #prevdog:hover {
+            box-shadow: 5px 0 5px inset peru;
+        }
+
+        .directiondog #nextdog:hover {
+            box-shadow: 5px 0 5px inset peru;
+        }
+
+    .itemdog {
+        border-radius: 10px;
+        width: 300px;
+        height: 520px;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 10px;
+        box-shadow: 0px 5px 5px black;
+    }
+        .itemdog:hover {
+            box-shadow: 0px 5px 5px sandybrown;
+        }
+
+    #listdog {
+        display: flex;
+        width: max-content;
+    }
+
+    #formlistdog {
+        width: 1280px;
+        max-width: 100%;
+        overflow: auto;
+        margin: 10px auto;
+        scroll-behavior: smooth;
+    }
+
+        #formlistdog::-webkit-scrollbar {
+            display: none;
+        }
+</style>
+@{int count = 0;}
+@foreach (var pro in Model)
+
+{
+    if (count <= 10)
+    {
+        int? rate = pro.Rating;
+        <div class="itemdog" style="border: initial;">
+            <div style="height:55%; width:100%;"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="height:100%;width:100%" /></a></div>
+            <div style="height:30%">
+                <h3 style=" text-align: center;">@Html.DisplayFor(model => pro.NamePro)</h3>
+                <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+                <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                <div style="font-size:large; padding-left:10px;">
+                    @for (int i = 1; i <= rate; i++)
+                    {
+                        <i class='bx bxs-star' style="color:yellow;"></i>
+                    }
+                    @for (int i = 1; i <= 5 - rate; i++)
+                    {
+                        <i class='bx bxs-star' style="color:gray;"></i>
+                    }
+                </div>
+            </div>
+            <div style="height:15%">
+                <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color:peru">Buy</a></h3>
+            </div>
+        </div>
+        count++;
+    }
+    else
+    {
+        break;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+<style>
+    .directionrabbit {
+        text-align: center;
+        height: 100px;
+        width: 1250px;
+        margin-left:10px;
+        top: 50%;
+        position: absolute;
+    }
+
+        .directionrabbit #prevrabbit {
+            background-color: peru;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            position: absolute;
+            transition: 1s;
+            box-shadow: 5px 0 5px chocolate;
+            right: 100%;
+        }
+
+        .directionrabbit #nextrabbit {
+            background-color: peru;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            position: absolute;
+            transition: 1s;
+            box-shadow: 5px 0 5px chocolate;
+            left: 100%;
+        }
+
+        .directionrabbit #prevrabbit:hover {
+            box-shadow: 5px 0 5px inset chocolate;
+        }
+
+        .directionrabbit #nextrabbit:hover {
+            box-shadow: 5px 0 5px inset chocolate;
+        }
+
+    .itemrabbit {
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+        overflow: hidden;
+        transition: 0.5s;
+        margin: 10px;
+        box-shadow: 0px 5px 5px black;
+    }
+        .itemrabbit:hover {
+            box-shadow: 0px 5px 5px peru;
+        }
+    #listrabbit {
+        display: flex;
+        width: max-content;
+    }
+
+    #formlistrabbit {
+        width: 1280px;
+        max-width: 100%;
+        overflow: auto;
+        margin: 10px auto;
+        scroll-behavior: smooth;
+    }
+
+    #formlistrabbit::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+@{int count = 0;}
+@foreach (var pro in Model)
+    
+{
+    int? rate = pro.Rating;
+    <div class="itemrabbit" style="border: initial;">
+        <div style="height:45%; width:100%;"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="height:100%;width:100%" /></a></div>
+        <div style="height:40%">
+            <h3 style=" text-align: center;">@Html.DisplayFor(model => pro.NamePro)</h3>
+            <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Age) tháng tuổi</p>
+            <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+            <div style="font-size:large; padding-left:10px;">
+                @for (int i = 1; i <= rate; i++)
+                {
+                    <i class='bx bxs-star' style="color:yellow;"></i>
+                }
+                @for (int i = 1; i <= 5 - rate; i++)
+                {
+                    <i class='bx bxs-star' style="color:gray;"></i>
+                }
+            </div>
+        </div>
+        <div style="height:15%">
+            <h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color:peru">Buy</a></h3>
+        </div>
+    </div>
+    count++;
+}
+

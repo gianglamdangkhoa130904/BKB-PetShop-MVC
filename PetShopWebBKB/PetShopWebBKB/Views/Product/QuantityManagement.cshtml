@@ -1,0 +1,114 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+@{
+    ViewBag.Title = "QuantityManagement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #title {
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        font-family: Candara;
+    }
+
+    .item {
+        border-radius: 10px;
+        width: 300px;
+        height: 650px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right bottom,whitesmoke,darksalmon);
+        box-shadow: 0px 5px 5px black;
+    }
+
+    #delete {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #delete a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+            #delete a:hover {
+                text-decoration: none;
+                color: white;
+            }
+</style>
+
+
+
+<div class="container-lg" style="border-radius:20px; height:auto">
+    <h2 style="font-size: 40px; margin-top:10px;text-align:center;">Danh sách sản phẩm trong kho</h2>
+    <div class="row" style=" margin-bottom: 20px;"><a href="@Url.Action("Create", "Product")" style="text-decoration: none; color: black; font-size: 30px;">Create Product</a></div>
+    <div class="row" style="height:auto; display:flex;justify-content:center; align-items:center;">
+        <table class="table" style="border: solid black; font-size: 30px; border: solid black; text-align: center;">
+            <tr>
+                <th>
+                    <p style="font-size: x-large; padding-left:10px;">Tên sản phẩm</p>
+                </th>
+                <th>
+                    <p style="font-size: x-large; padding-left: 10px;">Số lượng sản phẩm đã bán</p>
+                </th>
+                <th>
+                    <p style="font-size: x-large; padding-left: 10px;">Số lượng sản phẩm tồn</p>
+                </th>
+                <th>
+                    <p style="font-size: x-large; padding-left: 10px;">Thêm sản phẩm</p>
+                </th>
+                <th>
+                    <p style="font-size: x-large; padding-left: 10px;">Mức giá</p>
+                </th>
+                <th>
+                    <p style="font-size: x-large; padding-left: 10px;">Nút chức năng</p>
+                </th>
+            </tr>
+            @foreach (var pro in Model)
+            {
+        <tr>
+            <td>
+                <h3 style="font-family:'Segoe UI';font-size:large">@Html.DisplayFor(model => pro.NamePro)</h3>
+            </td>
+            <td>
+                <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.SoldQuantity)</p>
+            </td>
+            <td>
+                <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.RemainQuantity)</p>
+            </td>
+            <td>
+                @using (Html.BeginForm("Update_Remain_Quantity", "Product"))
+                {
+                    <input type="hidden" value="@pro.ID" name="ID" />
+                    <input type="number" value="0" name="RemainQuantity" max="100" min="0" style="width: 50px; height:40px; font-size:medium" />
+                    <input type="submit" value="Update" style="width: 60px; height: 40px; font-size: small; height: max-content " />
+                    <div>
+                        @if (ViewBag.ErrorQuantity != null)
+                        {
+                            <p>@ViewBag.ErrorQuantity</p>
+                        }
+                    </div>
+                }               
+            </td>
+            <td>
+                <p style="font-size:large; padding-left:10px;">@Html.DisplayFor(model => pro.Price)</p>
+            </td>
+            <td>
+                <div id="delete">
+                    @Html.ActionLink("Delete", "Delete", new { id = pro.ID })
+                </div>
+            </td>
+        </tr>
+
+        }
+        </table>
+    </div>
+</div>
+

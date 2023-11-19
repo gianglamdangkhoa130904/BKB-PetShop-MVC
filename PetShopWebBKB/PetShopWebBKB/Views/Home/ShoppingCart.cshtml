@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ShoppingCart";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link rel="stylesheet" href="~/Content/ShoppingCartStyle.css" />
+<div class="container-lg">
+    <div class="row">
+        <div class="words" style="margin-left: -10%;">
+            <h2 style="margin-left: 10%;">Giỏ hàng</h2>
+            <p style="margin-left: 10%;">Bạn đã thêm vào giỏ hàng rồi ? <a href="ShoppedCart">bấm vào đây</a></p>
+        </div>
+        <div id="shoppingcart">
+            <div align="center" style="padding-top: 5%"><img src="~/Image/ShoppingCartImg/ico_emptycart.svg" /></div><br />
+            <p align="center">Chưa có sản phẩm trong giỏ hàng của bạn.</p>
+            <a href="Home"><div align="center"><button id="muangay">MUA SẮM NGAY</button></div></a>
+        </div>
+    </div>
+</div>
+

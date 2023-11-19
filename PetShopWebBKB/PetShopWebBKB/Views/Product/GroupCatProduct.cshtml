@@ -1,0 +1,158 @@
+﻿@model IEnumerable<PetShopWebBKB.Models.Product>
+
+<script>
+    function Cage(a, b, c) {
+        document.getElementById(a).style.display = 'flex';
+        document.getElementById(b).style.display = 'none';
+        document.getElementById(c).style.display = 'none';
+    }
+</script>
+<style>
+    #btn {
+        font-size: 20px;
+        font-weight: bold;
+        width: 300px;
+        height: 75px;
+        background-color: white;
+        border: none;
+        margin-left: 20px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+
+        #btn:hover {
+            color: chocolate;
+            box-shadow: 0 10px 10px chocolate;
+        }
+
+    .item {
+        border: solid black;
+        border-width: 3px;
+        border-radius: 10px;
+        width: 230px;
+        height: 400px;
+        margin: 10px;
+        box-shadow: 0px 5px 5px black;
+        float: left;
+    }
+
+        .item:hover {
+            border-width: 3px;
+            border: solid chocolate;
+            box-shadow: 0px 5px 5px chocolate;
+        }
+</style>
+
+<div style="height:140px; width:100%;display:flex; align-items:center; " id="btns">
+    <button id="btn" type="button" onclick="Cage('FoodDog','FoodCat','FoodRabbit')" style="">Mèo hot</button>
+    <button id="btn" type="button" onclick="Cage('FoodCat','FoodDog','FoodRabbit')" style="">Mèo phổ biến</button>
+    <button id="btn" type="button" onclick="Cage('FoodRabbit','FoodDog','FoodCat')" style="">Mèo hiếm</button>
+</div>
+<div style="height:450px; width:100%; transition:0.5s;">
+    <div id="FoodDog" style="height:100%; display:flex; justify-content:center;align-items:center ">
+        @{ int count = 0;}
+        @foreach (var pro in Model)
+        {
+
+            if (pro.IDPopular == "hot")
+            {
+                int? rate = pro.Rating;
+                <div class="item">
+                    <div style="height:50%; width:100%;"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="height:100%;width:100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center;">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                        <div style="font-size:large; padding-left:10px;">
+                            @for (int i = 1; i <= rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:yellow;"></i>
+                            }
+                            @for (int i = 1; i <= 5 - rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:gray;"></i>
+                            }
+                        </div>
+                    </div>
+                    <div style="height:15%"><h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color:peru">Buy</a></h3></div>
+                </div>
+                count++;
+            }
+            if (count == 5)
+            {
+                break;
+            }
+        }
+    </div>
+    <div id="FoodCat" style="height: 100%; display: none; justify-content: center; align-items: center">
+        @{count = 0;}
+        @foreach (var pro in Model)
+        {
+            if (pro.IDPopular == "popular")
+            {
+                int? rate = pro.Rating;
+                <div class="item">
+                    <div style="height:50%; width:100%;"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center;">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                        <div style="font-size:large; padding-left:10px;">
+                            @for (int i = 1; i <= rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:yellow;"></i>
+                            }
+                            @for (int i = 1; i <= 5 - rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:gray;"></i>
+                            }
+                        </div>
+                    </div>
+                    <div style="height:15%"><h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color:peru">Buy</a></h3></div>
+                </div>
+                count++;
+            }
+            if (count == 5)
+            {
+                break;
+            }
+        }
+    </div>
+    <div id="FoodRabbit" style="height: 100%; display: none; justify-content: center; align-items: center">
+        @{count = 0;}
+        @foreach (var pro in Model)
+        {
+            if (pro.IDPopular == "rare")
+            {
+                int? rate = pro.Rating;
+                <div class="item">
+                    <div style="height:50%; width:100%;"><a href="@Url.Action("Details","Product", new { id = pro.ID})"><img src="@Url.Content(pro.ImagePro)" style="height: 100%; width: 100%; border-radius: 10px;" /></a></div>
+                    <div style="height:35%">
+                        <h3 style=" text-align: center;">@Html.DisplayFor(model => pro.NamePro)</h3>
+                        <p style="font-size:large; padding-left:10px;">Giá: @Html.DisplayFor(model => pro.Price)</p>
+                        <div style="font-size:large; padding-left:10px;">
+                            @for (int i = 1; i <= rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:yellow;"></i>
+                            }
+                            @for (int i = 1; i <= 5 - rate; i++)
+                            {
+                                <i class='bx bxs-star' style="color:gray;"></i>
+                            }
+                        </div>
+                    </div>
+                    <div style="height:15%"><h3 style="text-align:center"><a href="/ShoppingCart/AddToCart/@pro.ID" style="text-decoration: none; font-size: 30px; color:peru">Buy</a></h3></div>
+                </div>
+                count++;
+            }
+            if (count == 5)
+            {
+                break;
+            }
+        }
+    </div>
+</div>
+
+
+
+
+
+

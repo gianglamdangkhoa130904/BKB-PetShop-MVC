@@ -1,0 +1,20 @@
+﻿body {
+}
+
+
+#shoppingcart {
+    background-color: darkgray;
+    border-radius: 10px;
+    height: 400px;
+}
+
+#muangay {
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 15%;
+    height: 35px;
+    font-family: Arial;
+    margin-top: 2%;
+}

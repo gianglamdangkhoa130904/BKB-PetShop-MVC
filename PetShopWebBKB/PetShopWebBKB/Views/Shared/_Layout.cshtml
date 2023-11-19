@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <meta lang="vi" />
+    <title>BKB Pet Shop</title>
+    <link rel="stylesheet" href="~/Content/MasterStyle.css" />
+    <link rel="icon" href="~/Image/favicon.png" />
+    <link rel="stylesheet" href="~/Content/bootstrap5/bootstrap.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        #master {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            #master li {
+                font-size: 35px;
+                margin-left: 10px;
+            }
+                #master li a {
+                    text-decoration: none;
+                    background: none;
+                    color: white;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                #master li a:hover{
+                    color:rosybrown;
+                }
+    </style>
+</head>
+<body style="background: linear-gradient(to right, rosybrown, whitesmoke, rosybrown); padding-top: 0px;">
+    <div class="container-lg" style="height:100px; background:linear-gradient(to right bottom, gray, black); border-radius:0 0 10px 10px">
+        <ul class="" id="master">
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("Product", "Index", "Product")</li>
+            <li>@Html.ActionLink("Menu", "Index", "Menu")</li>
+            <li>@Html.ActionLink("Customer", "ListAccount", "LoginCus")</li>
+            <li>@Html.ActionLink("Order", "Index", "Order")</li>
+            <li>@Html.ActionLink("QuantityManagement", "QuantityManagement", "Product")</li>
+            @{if (Session["RoleAdmin"] != null)
+                {
+                    if (Session["RoleAdmin"].ToString().CompareTo("Manager") == 0)
+                    {
+                        <li>@Html.ActionLink("User", "Index", "Admin")</li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+        @RenderBody()
+</body>
+</html>
