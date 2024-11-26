@@ -1,0 +1,113 @@
+drop database PetShop
+create database PetShop
+use PetShop
+create table AdminUser(
+	ID int identity(1,1) not null constraint PK_Account primary key,
+	UserName varchar(max) null,
+	PasswordCus varchar(max) null,
+	RoleAdmin varchar(max) null,
+)
+create table Customer(
+	ID int identity(1,1) not null constraint PK_Customer primary key,
+	UserName varchar(max) null,
+	PasswordCus varchar(max) null,
+	NameCustomer Nvarchar(max) null,
+	AddressCus Nvarchar(max) null,
+	Email Varchar(max) null,
+	PhoneNumber varchar(15) null,
+	DateOfBirth datetime null,
+)
+create table Menu(
+	ID int identity(1,1) not null ,
+	ProductID varChar(10) not null constraint PK_Menu primary key,
+	NameID NVarchar(max) null
+)
+create table Fur(
+	ID int identity(1,1) not null ,
+	FurID varchar(10) not null constraint PK_Feathers primary key,
+	FurType Nvarchar(max) null
+)
+create table Size(
+	ID int identity(1,1) not null ,
+	SizeID varchar(10) not null constraint PK_Size primary key,
+	SizeType Nvarchar(max) null
+)
+create table Origin(
+	ID int identity(1,1) not null ,
+	OriginID varchar(10) not null constraint PK_Origin primary key,
+	Origination Nvarchar(max) null
+)
+create table Popular(
+	ID int identity(1,1) not null ,
+	PopularID varchar(10) not null constraint PK_Popular primary key,
+	Popularity Nvarchar(max) null
+)
+create table Product(
+	ID int identity(1,1) not null constraint PK_Product primary key,
+	IDPro varchar(10) null,
+	IDFur varchar(10) null,
+	IDSize varchar(10) null,
+	IDOrigin varchar(10) null,
+	IDPopular varchar(10) null,
+	NamePro Nvarchar(max) null,
+	ImagePro varchar(max) null,
+	Price decimal(20,1) null,
+	Rating int null,
+	Age smallint null,
+	SoldQuantity int null,
+	RemainQuantity int null,
+	DescriptionPro nvarchar(max) null,
+	Constraint FK_Product_Menu foreign key (IDPro) references Menu(ProductID),
+	Constraint FK_Product_Fur foreign key (IDFur) references Fur(FurID),
+	Constraint FK_Product_Size foreign key (IDSize) references Size(SizeID),
+	Constraint FK_Product_Origin foreign key (IDOrigin) references Origin(OriginID),
+	Constraint FK_Product_Popular foreign key (IDPopular) references Popular(PopularID)
+)
+create table OrderPro(
+	ID int identity(1,1) not null constraint PK_OrderPro primary key,
+	DateOrder nvarchar(max) null,
+	IDcus int null,
+	AddressDelivery Nvarchar(max) null,
+	Total decimal(20,1) null,
+	Constraint FK_OrderPro_Customer foreign key (IDCus)  references Customer(ID)
+)
+create table OrderDetail(
+	ID int identity(1,1) not null constraint PK_OrderDetail primary key,
+	IDPro int null,
+	NameCustomer Nvarchar(max) null,
+	AddressCus Nvarchar(max) null,
+	Email Varchar(max) null,
+	PhoneNumber varchar(15) null,
+	ImageOrder varchar(max) null,
+	IDOrder int null,
+	Quantity int null,
+	UnitPrice float(53) null,
+	Constraint FK_OrderDetail_Product foreign key (IDPro) references Product(ID),
+	Constraint FK_OrderDetail_OrderPro foreign key (IDOrder) references OrderPro(ID)
+)
+insert into Menu
+values('Dog',N'Chó'),
+('Cat',N'Mèo'),
+('Hamster',N'Chuột Hamster'),
+('Rabbit',N'Thỏ')
+insert into Fur
+values('Long',N'Lông dài'),
+('Short',N'Lông Ngắn')
+insert into Size
+values('Big',N'Lớn'),
+('Medium',N'Trung'),
+('Small',N'Nhỏ')
+insert into Origin
+values('vn',N'Việt Nam'),
+('us',N'Mĩ'),
+('uk','Anh'),
+('jp',N'Nhật Bản'),
+('cn',N'Trung Quốc')
+insert into Popular
+values('hot','Hot'),
+('popular',N'Phổ biến'),
+('rare',N'Hiếm có')
+
+insert into AdminUser
+values('admin','admin123','Manager'),
+('admin1','admin1234','Employee')
